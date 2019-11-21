@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "restoration_of_balance",
+			"rarity" : "province"
+		},
+		{
+			"name": "sacred_sanctuary",
+			"rarity" : "province"
+		},
+		{
+			"name": "scene_of_the_crime",
+			"rarity" : "province"
+		},
+		{
+			"name": "togashi_mendicant",
+			"rarity" : "common"
+		},
+		{
+			"name": "togashi_initiate",
+			"rarity" : "common"
+		},
+		{
+			"name": "agasha_swordsmith",
+			"rarity" : "common"
+		},
+		{
+			"name": "impulsive_novice",
+			"rarity" : "common"
+		},
+		{
+			"name": "enlightened_warrior",
+			"rarity" : "common"
+		},
+		{
+			"name": "tranquil_philosopher",
+			"rarity" : "common"
+		},
+		{
+			"name": "kitsuki_yaruma",
+			"rarity" : "common"
+		},
+		{
+			"name": "army_of_the_rising_wave",
+			"rarity" : "common"
+		},
+		{
+			"name": "mountaintop_statuary",
+			"rarity" : "common"
+		},
+		{
+			"name": "daimyo's_favor",
+			"rarity" : "common"
+		},
+		{
+			"name": "hurricane_punch",
+			"rarity" : "common"
+		},
+		{
+			"name": "let_go",
+			"rarity" : "common"
+		},
+		{
+			"name": "seal_of_the_dragon",
+			"rarity" : "common"
+		},
+		{
+			"name": "ancestral_daisho",
+			"rarity" : "common"
+		},
+		{
+			"name": "deduction",
+			"rarity" : "common"
+		},
+		{
+			"name": "indomitable_will",
+			"rarity" : "common"
+		},
+		{
+			"name": "kitsuki's_method",
+			"rarity" : "common"
+		},
+		{
+			"name": "kitsuki_jusai",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mountain's_anvil_castle",
+			"rarity" : "rare"
+		},
+		{
+			"name": "doomed_shugenja",
+			"rarity" : "rare"
+		},
+		{
+			"name": "agasha_shunsen",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kitsuki_investigator",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kitsuki_yuikimi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mirumoto_raitsugu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mirumoto_hitomi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "master_alchemist",
+			"rarity" : "rare"
+		},
+		{
+			"name": "togashi_tadakatsu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "togashi_mitsu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "togashi_yokuni",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mirumoto_dojo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "adopted_kin",
+			"rarity" : "rare"
+		},
+		{
+			"name": "void_fist",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ancient_master",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mirumoto's_fury",
+			"rarity" : "rare"
+		},
+		{
+			"name": "solitary_strength",
+			"rarity" : "rare"
+		},
+		{
+			"name": "tattooed_wanderer",
+			"rarity" : "rare"
+		},
+		{
+			"name": "justicar's_approach",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mirumoto_daisho",
+			"rarity" : "rare"
+		},
+		{
+			"name": "way_of_the_dragon",
+			"rarity" : "rare"
+		},
+		{
+			"name": "togashi_kazue",
+			"rarity" : "rare"
+		},
+		{
+			"name": "greater_understanding",
+			"rarity" : "rare"
+		}
+	]
+}

@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "effective_deception",
+			"rarity" : "province"
+		},
+		{
+			"name": "brother's_gift_dojo",
+			"rarity" : "province"
+		},
+		{
+			"name": "secret_cache",
+			"rarity" : "province"
+		},
+		{
+			"name": "bayushi_manipulator",
+			"rarity" : "common"
+		},
+		{
+			"name": "alibi_artist",
+			"rarity" : "common"
+		},
+		{
+			"name": "shameless_gossip",
+			"rarity" : "common"
+		},
+		{
+			"name": "soshi_illusionist",
+			"rarity" : "common"
+		},
+		{
+			"name": "favored_niece",
+			"rarity" : "common"
+		},
+		{
+			"name": "bayushi_yojiro",
+			"rarity" : "common"
+		},
+		{
+			"name": "shosuro_actress",
+			"rarity" : "common"
+		},
+		{
+			"name": "ignoble_enforcers",
+			"rarity" : "common"
+		},
+		{
+			"name": "city_of_lies",
+			"rarity" : "common"
+		},
+		{
+			"name": "way_of_the_scorpion",
+			"rarity" : "common"
+		},
+		{
+			"name": "make_an_opening",
+			"rarity" : "common"
+		},
+		{
+			"name": "deceptive_offer",
+			"rarity" : "common"
+		},
+		{
+			"name": "oni_mask",
+			"rarity" : "common"
+		},
+		{
+			"name": "fiery_madness",
+			"rarity" : "common"
+		},
+		{
+			"name": "maze_of_illusion",
+			"rarity" : "common"
+		},
+		{
+			"name": "adept_of_shadows",
+			"rarity" : "common"
+		},
+		{
+			"name": "ambush",
+			"rarity" : "common"
+		},
+		{
+			"name": "city_of_the_open_hand",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kyuden_bayushi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "bayushi_liar",
+			"rarity" : "rare"
+		},
+		{
+			"name": "sinister_soshi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "yogo_asami",
+			"rarity" : "rare"
+		},
+		{
+			"name": "loyal_challenger",
+			"rarity" : "rare"
+		},
+		{
+			"name": "bayushi_dairu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "yogo_hiroue",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shosuro_ibuki",
+			"rarity" : "rare"
+		},
+		{
+			"name": "bayushi_aramoro",
+			"rarity" : "rare"
+		},
+		{
+			"name": "bayushi_shoju",
+			"rarity" : "rare"
+		},
+		{
+			"name": "forged_edict",
+			"rarity" : "rare"
+		},
+		{
+			"name": "duty",
+			"rarity" : "rare"
+		},
+		{
+			"name": "calling_in_favors",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kirei-ko",
+			"rarity" : "rare"
+		},
+		{
+			"name": "stolen_secrets",
+			"rarity" : "rare"
+		},
+		{
+			"name": "stolen_breath",
+			"rarity" : "rare"
+		},
+		{
+			"name": "mark_of_shame",
+			"rarity" : "rare"
+		},
+		{
+			"name": "i_can_swim",
+			"rarity" : "rare"
+		},
+		{
+			"name": "unassuming_yojimbo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hidden_moon_dojo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "soshi_shiori",
+			"rarity" : "rare"
+		},
+		{
+			"name": "a_fate_worse_than_death",
+			"rarity" : "rare"
+		},
+		{
+			"name": "bayushi_kachiko",
+			"rarity" : "rare"
+		}
+	]
+}

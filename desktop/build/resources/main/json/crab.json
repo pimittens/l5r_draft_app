@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "defend_the_wall",
+			"rarity" : "province"
+		},
+		{
+			"name": "flooded_waste",
+			"rarity" : "province"
+		},
+		{
+			"name": "kuni_wasteland",
+			"rarity" : "province"
+		},
+		{
+			"name": "kaiu_envoy",
+			"rarity" : "common"
+		},
+		{
+			"name": "purifier_apprentice",
+			"rarity" : "common"
+		},
+		{
+			"name": "hiruma_yojimbo",
+			"rarity" : "common"
+		},
+		{
+			"name": "student_of_anatomies",
+			"rarity" : "common"
+		},
+		{
+			"name": "hida_tomonatsu",
+			"rarity" : "common"
+		},
+		{
+			"name": "intimidating_hida",
+			"rarity" : "common"
+		},
+		{
+			"name": "frontline_engineer",
+			"rarity" : "common"
+		},
+		{
+			"name": "fifth_tower_watch",
+			"rarity" : "common"
+		},
+		{
+			"name": "funeral_pyre",
+			"rarity" : "common"
+		},
+		{
+			"name": "fruitful_respite",
+			"rarity" : "common"
+		},
+		{
+			"name": "give_no_ground",
+			"rarity" : "common"
+		},
+		{
+			"name": "smuggling_deal",
+			"rarity" : "common"
+		},
+		{
+			"name": "spreading_the_darkness",
+			"rarity" : "common"
+		},
+		{
+			"name": "in_defense_of_rokugan",
+			"rarity" : "common"
+		},
+		{
+			"name": "reprieve",
+			"rarity" : "common"
+		},
+		{
+			"name": "honed_nodachi",
+			"rarity" : "common"
+		},
+		{
+			"name": "hiruma_ambusher",
+			"rarity" : "common"
+		},
+		{
+			"name": "kyuden_hida",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shiro_nishiyama",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shrewd_yasuki",
+			"rarity" : "rare"
+		},
+		{
+			"name": "borderlands_defender",
+			"rarity" : "rare"
+		},
+		{
+			"name": "crisis_breaker",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hida_o-ushi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hida_yakamo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "steadfast_witch_hunter",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hida_kisada",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kuni_yori",
+			"rarity" : "rare"
+		},
+		{
+			"name": "iron_mine",
+			"rarity" : "rare"
+		},
+		{
+			"name": "karada_district",
+			"rarity" : "rare"
+		},
+		{
+			"name": "seventh_tower",
+			"rarity" : "rare"
+		},
+		{
+			"name": "pathfinder's_blade",
+			"rarity" : "rare"
+		},
+		{
+			"name": "fight_on",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hiruma_skirmisher",
+			"rarity" : "rare"
+		},
+		{
+			"name": "reinforced_plate",
+			"rarity" : "rare"
+		},
+		{
+			"name": "the_mountain_does_not_fall",
+			"rarity" : "rare"
+		},
+		{
+			"name": "watch_commander",
+			"rarity" : "rare"
+		},
+		{
+			"name": "way_of_the_crab",
+			"rarity" : "rare"
+		},
+		{
+			"name": "desolation",
+			"rarity" : "rare"
+		},
+		{
+			"name": "fury_of_the_damned",
+			"rarity" : "rare"
+		},
+		{
+			"name": "jade_tetsubo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "the_strength_of_the_mountain",
+			"rarity" : "rare"
+		}
+	]
+}

@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "magistrate_station",
+			"rarity" : "province"
+		},
+		{
+			"name": "market_of_kaze-no-kami",
+			"rarity" : "province"
+		},
+		{
+			"name": "conflict_between_kin",
+			"rarity" : "province"
+		},
+		{
+			"name": "callow_delegate",
+			"rarity" : "common"
+		},
+		{
+			"name": "ichigenkin_soloist",
+			"rarity" : "common"
+		},
+		{
+			"name": "brash_samurai",
+			"rarity" : "common"
+		},
+		{
+			"name": "savvy_politician",
+			"rarity" : "common"
+		},
+		{
+			"name": "kakita_kaezin",
+			"rarity" : "common"
+		},
+		{
+			"name": "paragon_of_grace",
+			"rarity" : "common"
+		},
+		{
+			"name": "asahina_storyteller",
+			"rarity" : "common"
+		},
+		{
+			"name": "tengu_sensei",
+			"rarity" : "common"
+		},
+		{
+			"name": "artisan_academy",
+			"rarity" : "common"
+		},
+		{
+			"name": "formal_invitation",
+			"rarity" : "common"
+		},
+		{
+			"name": "political_sanction",
+			"rarity" : "common"
+		},
+		{
+			"name": "try_again_tomorrow",
+			"rarity" : "common"
+		},
+		{
+			"name": "way_of_the_crane",
+			"rarity" : "common"
+		},
+		{
+			"name": "admit_defeat",
+			"rarity" : "common"
+		},
+		{
+			"name": "duelist_training",
+			"rarity" : "common"
+		},
+		{
+			"name": "game_of_sadane",
+			"rarity" : "common"
+		},
+		{
+			"name": "arbiter_of_authority",
+			"rarity" : "common"
+		},
+		{
+			"name": "kyuden_kakita",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shizuka_toshi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "cautious_scout",
+			"rarity" : "rare"
+		},
+		{
+			"name": "daidoji_kageyu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "doji_challenger",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kakita_asami",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kakita_ryoku",
+			"rarity" : "rare"
+		},
+		{
+			"name": "guest_of_honor",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kakita_toshimoko",
+			"rarity" : "rare"
+		},
+		{
+			"name": "daidoji_uji",
+			"rarity" : "rare"
+		},
+		{
+			"name": "doji_hotaru_exp",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kakita_yoshi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kakita_dojo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "a_new_name",
+			"rarity" : "rare"
+		},
+		{
+			"name": "moment_of_perfect_beauty",
+			"rarity" : "rare"
+		},
+		{
+			"name": "voice_of_honor",
+			"rarity" : "rare"
+		},
+		{
+			"name": "above_question",
+			"rarity" : "rare"
+		},
+		{
+			"name": "disdainful_remark",
+			"rarity" : "rare"
+		},
+		{
+			"name": "duel_to_the_death",
+			"rarity" : "rare"
+		},
+		{
+			"name": "noble_sacrifice",
+			"rarity" : "rare"
+		},
+		{
+			"name": "soul_beyond_reproach",
+			"rarity" : "rare"
+		},
+		{
+			"name": "doji_fumiki",
+			"rarity" : "rare"
+		},
+		{
+			"name": "menacing_iron_warrior",
+			"rarity" : "rare"
+		},
+		{
+			"name": "political_rival",
+			"rarity" : "rare"
+		}
+	]
+}

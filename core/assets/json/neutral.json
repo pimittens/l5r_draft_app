@@ -1,0 +1,292 @@
+{
+	"cards": [
+		{
+			"name": "ancestral_lands",
+			"rarity" : "province"
+		},
+		{
+			"name": "before_the_throne",
+			"rarity" : "province"
+		},
+		{
+			"name": "entrenched_position",
+			"rarity" : "province"
+		},
+		{
+			"name": "fertile_fields",
+			"rarity" : "province"
+		},
+		{
+			"name": "gateway_to_meido",
+			"rarity" : "province"
+		},
+		{
+			"name": "into_the_forbidden_city",
+			"rarity" : "province"
+		},
+		{
+			"name": "manicured_garden",
+			"rarity" : "province"
+		},
+		{
+			"name": "meditations_on_the_tao",
+			"rarity" : "province"
+		},
+		{
+			"name": "midnight_revels",
+			"rarity" : "province"
+		},
+		{
+			"name": "night_raid",
+			"rarity" : "province"
+		},
+		{
+			"name": "pilgrimage",
+			"rarity" : "province"
+		},
+		{
+			"name": "rally_to_the_cause",
+			"rarity" : "province"
+		},
+		{
+			"name": "shameful_display",
+			"rarity" : "province"
+		},
+		{
+			"name": "smuggler's_cove",
+			"rarity" : "province"
+		},
+		{
+			"name": "vassal_fields",
+			"rarity" : "province"
+		},
+		{
+			"name": "caravan_guard",
+			"rarity" : "common"
+		},
+		{
+			"name": "otomo_courtier",
+			"rarity" : "super_common"
+		},
+		{
+			"name": "seppun_guardsman",
+			"rarity" : "super_common"
+		},
+		{
+			"name": "armament_artisan",
+			"rarity" : "common"
+		},
+		{
+			"name": "aspiring_challenger",
+			"rarity" : "common"
+		},
+		{
+			"name": "imperial_librarian",
+			"rarity" : "common"
+		},
+		{
+			"name": "mantis_tenkinja",
+			"rarity" : "common"
+		},
+		{
+			"name": "marauding_oni",
+			"rarity" : "common"
+		},
+		{
+			"name": "miya_mystic",
+			"rarity" : "super_common"
+		},
+		{
+			"name": "moto_eviscerator",
+			"rarity" : "common"
+		},
+		{
+			"name": "seppun_hidden_guard",
+			"rarity" : "common"
+		},
+		{
+			"name": "seppun_truthseeker",
+			"rarity" : "common"
+		},
+		{
+			"name": "humble_magistrate",
+			"rarity" : "common"
+		},
+		{
+			"name": "ivory_kingdoms_unicorn",
+			"rarity" : "common"
+		},
+		{
+			"name": "righteous_magistrate",
+			"rarity" : "common"
+		},
+		{
+			"name": "yoritomo",
+			"rarity" : "common"
+		},
+		{
+			"name": "favorable_ground",
+			"rarity" : "super_common"
+		},
+		{
+			"name": "imperial_storehouse",
+			"rarity" : "common"
+		},
+		{
+			"name": "kansen_haunt",
+			"rarity" : "common"
+		},
+		{
+			"name": "proving_ground",
+			"rarity" : "common"
+		},
+		{
+			"name": "a_perfect_cut",
+			"rarity" : "common"
+		},
+		{
+			"name": "assassination",
+			"rarity" : "common"
+		},
+		{
+			"name": "banzai",
+			"rarity" : "common"
+		},
+		{
+			"name": "censure",
+			"rarity" : "common"
+		},
+		{
+			"name": "compass",
+			"rarity" : "common"
+		},
+		{
+			"name": "court_games",
+			"rarity" : "common"
+		},
+		{
+			"name": "defend_your_honor",
+			"rarity" : "common"
+		},
+		{
+			"name": "fine_katana",
+			"rarity" : "common"
+		},
+		{
+			"name": "for_shame",
+			"rarity" : "common"
+		},
+		{
+			"name": "offer_testimony",
+			"rarity" : "common"
+		},
+		{
+			"name": "ornate_fan",
+			"rarity" : "common"
+		},
+		{
+			"name": "sabotage",
+			"rarity" : "common"
+		},
+		{
+			"name": "spies_at_court",
+			"rarity" : "common"
+		},
+		{
+			"name": "cloud_the_mind",
+			"rarity" : "common"
+		},
+		{
+			"name": "slovenly_scavenger",
+			"rarity" : "common"
+		},
+		{
+			"name": "finger_of_jade",
+			"rarity" : "common"
+		},
+		{
+			"name": "kujira's_hireling",
+			"rarity" : "common"
+		},
+		{
+			"name": "outwit",
+			"rarity" : "common"
+		},
+		{
+			"name": "peasant's_advice",
+			"rarity" : "common"
+		},
+		{
+			"name": "rout",
+			"rarity" : "common"
+		},
+		{
+			"name": "unveiled_destiny",
+			"rarity" : "common"
+		},
+		{
+			"name": "goblin_sneak",
+			"rarity" : "common"
+		},
+		{
+			"name": "guardian_kami",
+			"rarity" : "common"
+		},
+		{
+			"name": "kami_unleashed",
+			"rarity" : "common"
+		},
+		{
+			"name": "way_of_the_chrysanthemum",
+			"rarity" : "common"
+		},
+		{
+			"name": "hantei_daisetsu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hantei_sotorii",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kudaka",
+			"rarity" : "rare"
+		},
+		{
+			"name": "akodo_toturi_exp",
+			"rarity" : "rare"
+		},
+		{
+			"name": "hantei_xxxviii",
+			"rarity" : "rare"
+		},
+		{
+			"name": "the_imperial_palace",
+			"rarity" : "rare"
+		},
+		{
+			"name": "daimyo's_gunbai",
+			"rarity" : "rare"
+		},
+		{
+			"name": "policy_debate",
+			"rarity" : "rare"
+		},
+		{
+			"name": "charge",
+			"rarity" : "rare"
+		},
+		{
+			"name": "those_who_serve",
+			"rarity" : "rare"
+		},
+		{
+			"name": "warm_welcome",
+			"rarity" : "rare"
+		},
+		{
+			"name": "perfect_land_ethos",
+			"rarity" : "rare"
+		}
+	]
+}

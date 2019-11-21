@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "sanpuku_seido",
+			"rarity" : "province"
+		},
+		{
+			"name": "henshin_mysteries",
+			"rarity" : "province"
+		},
+		{
+			"name": "kuroi_mori",
+			"rarity" : "province"
+		},
+		{
+			"name": "solemn_scholar",
+			"rarity" : "common"
+		},
+		{
+			"name": "naive_student",
+			"rarity" : "common"
+		},
+		{
+			"name": "shiba_tetsu",
+			"rarity" : "common"
+		},
+		{
+			"name": "adept_of_the_waves",
+			"rarity" : "common"
+		},
+		{
+			"name": "shiba_yojimbo",
+			"rarity" : "common"
+		},
+		{
+			"name": "inquisitive_ishika",
+			"rarity" : "common"
+		},
+		{
+			"name": "fire_elemental_guard",
+			"rarity" : "common"
+		},
+		{
+			"name": "kaito_temple_protector",
+			"rarity" : "common"
+		},
+		{
+			"name": "forgotten_library",
+			"rarity" : "common"
+		},
+		{
+			"name": "magnificent_kimono",
+			"rarity" : "common"
+		},
+		{
+			"name": "unmatched_expertise",
+			"rarity" : "common"
+		},
+		{
+			"name": "supernatural_storm",
+			"rarity" : "common"
+		},
+		{
+			"name": "all_and_nothing",
+			"rarity" : "common"
+		},
+		{
+			"name": "against_the_waves",
+			"rarity" : "common"
+		},
+		{
+			"name": "gift_of_amaterasu",
+			"rarity" : "common"
+		},
+		{
+			"name": "harmonize",
+			"rarity" : "common"
+		},
+		{
+			"name": "ishiken_initiate",
+			"rarity" : "common"
+		},
+		{
+			"name": "isawa_mori_seido",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kyuden_isawa",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ethereal_dreamer",
+			"rarity" : "rare"
+		},
+		{
+			"name": "asako_tsuki",
+			"rarity" : "rare"
+		},
+		{
+			"name": "isawa_uona",
+			"rarity" : "rare"
+		},
+		{
+			"name": "asako_maezawa",
+			"rarity" : "rare"
+		},
+		{
+			"name": "haughty_magistrate",
+			"rarity" : "rare"
+		},
+		{
+			"name": "prodigy_of_the_waves",
+			"rarity" : "rare"
+		},
+		{
+			"name": "master_of_gisei_toshi",
+			"rarity" : "rare"
+		},
+		{
+			"name": "isawa_ujina",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shiba_tsukune",
+			"rarity" : "rare"
+		},
+		{
+			"name": "isawa_tadaka_exp",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kanjo_district",
+			"rarity" : "rare"
+		},
+		{
+			"name": "embrace_the_void",
+			"rarity" : "rare"
+		},
+		{
+			"name": "clarity_of_purpose",
+			"rarity" : "rare"
+		},
+		{
+			"name": "jurojin's_curse",
+			"rarity" : "rare"
+		},
+		{
+			"name": "earth_becomes_sky",
+			"rarity" : "rare"
+		},
+		{
+			"name": "karmic_twist",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shrine_maiden",
+			"rarity" : "rare"
+		},
+		{
+			"name": "pacifism",
+			"rarity" : "rare"
+		},
+		{
+			"name": "display_of_power",
+			"rarity" : "rare"
+		},
+		{
+			"name": "feral_ningyo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kaito_kosori",
+			"rarity" : "rare"
+		},
+		{
+			"name": "consumed_by_five_fires",
+			"rarity" : "rare"
+		}
+	]
+}

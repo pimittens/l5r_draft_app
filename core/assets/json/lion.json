@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "the_art_of_war",
+			"rarity" : "province"
+		},
+		{
+			"name": "kenson_no_gakka",
+			"rarity" : "province"
+		},
+		{
+			"name": "dishonorable_assault",
+			"rarity" : "province"
+		},
+		{
+			"name": "obstinate_recruit",
+			"rarity" : "common"
+		},
+		{
+			"name": "steadfast_samurai",
+			"rarity" : "common"
+		},
+		{
+			"name": "gifted_tactician",
+			"rarity" : "common"
+		},
+		{
+			"name": "ikoma_tsanuri",
+			"rarity" : "common"
+		},
+		{
+			"name": "ardent_omoidasu",
+			"rarity" : "common"
+		},
+		{
+			"name": "student_of_war",
+			"rarity" : "common"
+		},
+		{
+			"name": "akodo_motivator",
+			"rarity" : "common"
+		},
+		{
+			"name": "matsu_seventh_legion",
+			"rarity" : "common"
+		},
+		{
+			"name": "staging_ground",
+			"rarity" : "common"
+		},
+		{
+			"name": "way_of_the_lion",
+			"rarity" : "common"
+		},
+		{
+			"name": "ready_for_battle",
+			"rarity" : "common"
+		},
+		{
+			"name": "hand_to_hand",
+			"rarity" : "common"
+		},
+		{
+			"name": "honor_in_battle",
+			"rarity" : "common"
+		},
+		{
+			"name": "strength_in_numbers",
+			"rarity" : "common"
+		},
+		{
+			"name": "honored_blade",
+			"rarity" : "common"
+		},
+		{
+			"name": "fan_of_command",
+			"rarity" : "common"
+		},
+		{
+			"name": "vengeful_oathkeeper",
+			"rarity" : "common"
+		},
+		{
+			"name": "yojin_no_shiro",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kyuden_ikoma",
+			"rarity" : "rare"
+		},
+		{
+			"name": "matsu_berserker",
+			"rarity" : "rare"
+		},
+		{
+			"name": "matsu_gohei",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ikoma_ikehata",
+			"rarity" : "rare"
+		},
+		{
+			"name": "lion's_pride_brawler",
+			"rarity" : "rare"
+		},
+		{
+			"name": "akodo_zentaro",
+			"rarity" : "rare"
+		},
+		{
+			"name": "kitsu_spiritcaller",
+			"rarity" : "rare"
+		},
+		{
+			"name": "akodo_makoto",
+			"rarity" : "rare"
+		},
+		{
+			"name": "matsu_tsuko",
+			"rarity" : "rare"
+		},
+		{
+			"name": "voice_of_the_ancestors",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ikoma_ujiaki",
+			"rarity" : "rare"
+		},
+		{
+			"name": "matsu_tsuko_exp",
+			"rarity" : "rare"
+		},
+		{
+			"name": "embrace_death",
+			"rarity" : "rare"
+		},
+		{
+			"name": "a_legion_of_one",
+			"rarity" : "rare"
+		},
+		{
+			"name": "for_greater_glory",
+			"rarity" : "rare"
+		},
+		{
+			"name": "true_strike_kenjutsu",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ageless_crone",
+			"rarity" : "rare"
+		},
+		{
+			"name": "the_fires_of_justice",
+			"rarity" : "rare"
+		},
+		{
+			"name": "total_warfare",
+			"rarity" : "rare"
+		},
+		{
+			"name": "forebearer's_echoes",
+			"rarity" : "rare"
+		},
+		{
+			"name": "blade_of_10000_battles",
+			"rarity" : "rare"
+		},
+		{
+			"name": "sashimono",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ikoma_anakazu",
+			"rarity" : "rare"
+		}
+	]
+}

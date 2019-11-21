@@ -1,0 +1,180 @@
+{
+	"cards": [
+		{
+			"name": "untamed_steppe",
+			"rarity" : "province"
+		},
+		{
+			"name": "border_fortress",
+			"rarity" : "province"
+		},
+		{
+			"name": "khan's_ordu",
+			"rarity" : "province"
+		},
+		{
+			"name": "outskirts_sentry",
+			"rarity" : "common"
+		},
+		{
+			"name": "meishodo_wielder",
+			"rarity" : "common"
+		},
+		{
+			"name": "shinjo_trailblazer",
+			"rarity" : "common"
+		},
+		{
+			"name": "border_rider",
+			"rarity" : "common"
+		},
+		{
+			"name": "moto_nerguii",
+			"rarity" : "common"
+		},
+		{
+			"name": "master_of_the_swift_waves",
+			"rarity" : "common"
+		},
+		{
+			"name": "keeper_of_secret_names",
+			"rarity" : "common"
+		},
+		{
+			"name": "minami_kaze_regulars",
+			"rarity" : "common"
+		},
+		{
+			"name": "wayfarer's_camp",
+			"rarity" : "common"
+		},
+		{
+			"name": "curved_blade",
+			"rarity" : "common"
+		},
+		{
+			"name": "speak_to_the_heart",
+			"rarity" : "common"
+		},
+		{
+			"name": "seal_of_the_unicorn",
+			"rarity" : "common"
+		},
+		{
+			"name": "challenge_on_the_fields",
+			"rarity" : "common"
+		},
+		{
+			"name": "iuchi_wayfinder",
+			"rarity" : "common"
+		},
+		{
+			"name": "spyglass",
+			"rarity" : "common"
+		},
+		{
+			"name": "favored_mount",
+			"rarity" : "common"
+		},
+		{
+			"name": "invocation_of_ash",
+			"rarity" : "common"
+		},
+		{
+			"name": "hisu_mori_toride_uni",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shiro_shinjo",
+			"rarity" : "rare"
+		},
+		{
+			"name": "moto_youth",
+			"rarity" : "rare"
+		},
+		{
+			"name": "honest_challenger",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shinjo_yasamura",
+			"rarity" : "rare"
+		},
+		{
+			"name": "moto_ariq",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ide_ryoma",
+			"rarity" : "rare"
+		},
+		{
+			"name": "utaku_tetsuko",
+			"rarity" : "rare"
+		},
+		{
+			"name": "iuchi_shahai",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shinjo_shono",
+			"rarity" : "rare"
+		},
+		{
+			"name": "utaku_kamoko",
+			"rarity" : "rare"
+		},
+		{
+			"name": "utaku_rumaru",
+			"rarity" : "rare"
+		},
+		{
+			"name": "moto_chagatai",
+			"rarity" : "rare"
+		},
+		{
+			"name": "unleash_the_djinn",
+			"rarity" : "rare"
+		},
+		{
+			"name": "outflank",
+			"rarity" : "rare"
+		},
+		{
+			"name": "captive_audience",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shinjo_ambusher",
+			"rarity" : "rare"
+		},
+		{
+			"name": "gaijin_customs",
+			"rarity" : "rare"
+		},
+		{
+			"name": "talisman_of_the_sun",
+			"rarity" : "rare"
+		},
+		{
+			"name": "ring_of_binding",
+			"rarity" : "rare"
+		},
+		{
+			"name": "unfulfilled_duty",
+			"rarity" : "rare"
+		},
+		{
+			"name": "adorned_barcha",
+			"rarity" : "rare"
+		},
+		{
+			"name": "cavalry_reserves",
+			"rarity" : "rare"
+		},
+		{
+			"name": "shinjo_haruko",
+			"rarity" : "rare"
+		}
+	]
+}
