@@ -5,15 +5,11 @@ import com.badlogic.gdx.graphics.Texture;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * a pack of cards
- */
-public class Pack {
-
+public class Pool {
     private List<Card> cards;
     private List<Texture> cardImages;
 
-    public Pack() {
+    public Pool() {
         cards = new ArrayList<>();
         cardImages = new ArrayList<>();
     }
