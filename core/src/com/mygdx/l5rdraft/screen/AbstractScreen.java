@@ -1,7 +1,6 @@
 package com.mygdx.l5rdraft.screen;
 
 import com.badlogic.gdx.Screen;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.mygdx.l5rdraft.L5RDraft;
 
 public abstract class AbstractScreen implements Screen {

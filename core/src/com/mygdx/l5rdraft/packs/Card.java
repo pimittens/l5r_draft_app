@@ -1,7 +1,5 @@
 package com.mygdx.l5rdraft.packs;
 
-import com.badlogic.gdx.graphics.Texture;
-
 import java.util.List;
 
 /**

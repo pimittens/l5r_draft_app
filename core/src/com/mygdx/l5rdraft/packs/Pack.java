@@ -28,6 +28,10 @@ public class Pack {
         return pos < cards.size() ? cards.get(pos) : cards.get(0);
     }
 
+    public List<Card> getCards() {
+        return cards;
+    }
+
     public Card popCard(int pos) {
         Card ret = cards.remove(pos);
         cardImages.remove(pos);
