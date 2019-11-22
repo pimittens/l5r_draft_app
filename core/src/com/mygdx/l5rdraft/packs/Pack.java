@@ -7,7 +7,6 @@ import java.util.List;
 
 /**
  * a pack of cards
- * also used to represent a card pool
  */
 public class Pack {
 
@@ -26,6 +25,10 @@ public class Pack {
 
     public Card getCard(int pos) {
         return pos < cards.size() ? cards.get(pos) : cards.get(0);
+    }
+
+    public List<Card> getCards() {
+        return cards;
     }
 
     public Card popCard(int pos) {

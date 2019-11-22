@@ -2,20 +2,30 @@ package com.mygdx.l5rdraft.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
+import com.mygdx.l5rdraft.Assets;
 import com.mygdx.l5rdraft.InputProcessor;
 import com.mygdx.l5rdraft.L5RDraft;
+import com.mygdx.l5rdraft.packs.Card;
 import com.mygdx.l5rdraft.packs.PackFactory;
 import com.mygdx.l5rdraft.packs.PackView;
 import com.mygdx.l5rdraft.packs.PoolView;
+import javafx.scene.layout.BackgroundImage;
 
 public class DraftScreen extends AbstractScreen {
 
     private SpriteBatch batch;
     private ShapeRenderer shapes;
     private InputProcessor input;
+
+    private FreeTypeFontGenerator fontGenerator;
+    private FreeTypeFontGenerator.FreeTypeFontParameter parameters;
+    private BitmapFont font;
 
     private int height;
 
@@ -25,6 +35,11 @@ public class DraftScreen extends AbstractScreen {
     public DraftScreen(L5RDraft app) {
         super(app);
         height = Gdx.graphics.getHeight();
+        fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("BTTTRIAL.otf"));
+        parameters = new FreeTypeFontGenerator.FreeTypeFontParameter();
+        parameters.size = 30;
+        font = fontGenerator.generateFont(parameters);
+        //font.setColor(Color.WHITE);
         batch = new SpriteBatch();
         input = new InputProcessor(this);
         shapes = new ShapeRenderer();
@@ -49,6 +64,10 @@ public class DraftScreen extends AbstractScreen {
             // this will also remove the card from the pack if one was clicked
             if (packView.click(screenX, screenY)) {
                 // add the clicked card to the user's pool and give them a new pack
+                Card c = packView.getClickedCard();
+                Texture t = getApp().getAssets().get(Assets.CARD_PATH + c.getName() + ".png", Texture.class);
+                t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
+                poolView.addCardToPool(c, t);
             }
         }
     }
@@ -56,6 +75,7 @@ public class DraftScreen extends AbstractScreen {
     @Override
     public void dispose() {
         batch.dispose();
+        fontGenerator.dispose();
     }
 
     @Override
@@ -78,6 +98,7 @@ public class DraftScreen extends AbstractScreen {
     public void render(float delta) {
         batch.begin();
         packView.render(batch);
+        poolView.render(batch, font);
         batch.end();
 
         // don't use shape renderer between batch.begin and batch.end
@@ -98,6 +119,7 @@ public class DraftScreen extends AbstractScreen {
         shapes.setProjectionMatrix(batch.getProjectionMatrix());
         packView.resize(width, height);
         poolView.resize(width, height);
+        // todo: change font size here
     }
 
     @Override

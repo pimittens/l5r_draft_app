@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d03e368-a5d5-434e-816f-fc3d7c5bf365" name="Default Changelist" comment="pack view finished and clicking cards to remove them working" />
+    <list default="true" id="3d03e368-a5d5-434e-816f-fc3d7c5bf365" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Drafter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pack.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +36,15 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\libgdx\projects\l5r_draft_app\core\assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574221256996</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="pool now displays card names">
+      <created>1574375444665</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574375444666</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +168,7 @@
     <MESSAGE value="more stuff" />
     <MESSAGE value="jsons finished" />
     <MESSAGE value="pack view finished and clicking cards to remove them working" />
-    <option name="LAST_COMMIT_MESSAGE" value="pack view finished and clicking cards to remove them working" />
+    <MESSAGE value="pool now displays card names" />
+    <option name="LAST_COMMIT_MESSAGE" value="pool now displays card names" />
   </component>
 </project>

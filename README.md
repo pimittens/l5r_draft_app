@@ -2,17 +2,12 @@
 drafting app for l5r
 
 current task:
-<<<<<<< HEAD
 finish the card pool view
-add removed cards to the user's pool
+add a pool class: same as pack but also has quantities for each card
+adding a card to a pool should first check if the card is already in the pool
+if it is, just update the quantity
 1450x2083
 .7
-=======
-make a pack window view that displays all the cards
-determine the size of the packview based on the current screen size (change on resize)
-determine the size/pos of the cards in a packview based on the size of the packview (in render)
-figure out why i need an extra for loop iteration to draw all the cards in a pack
->>>>>>> parent of 068a651... cards
 
 planned features:
 

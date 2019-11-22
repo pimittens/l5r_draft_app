@@ -1,6 +1,5 @@
 package com.mygdx.l5rdraft.packs;
 
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
@@ -50,8 +49,6 @@ public class PackView {
      * @return true if a card was clicked
      */
     public boolean click(int screenX, int screenY) {
-        // todo: finish this
-        System.out.println(String.format("x: %s, y: %s", screenX, screenY));
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
         Rectangle nextCardBounds;
         for (int i = 0; i < pack.size(); i++) {
