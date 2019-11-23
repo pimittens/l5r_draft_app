@@ -14,6 +14,7 @@ import com.mygdx.l5rdraft.packs.PackFactory;
 import com.mygdx.l5rdraft.screen.AbstractScreen;
 import com.mygdx.l5rdraft.screen.DraftScreen;
 import com.mygdx.l5rdraft.screen.LoadingScreen;
+import com.mygdx.l5rdraft.screen.TestScreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,7 @@ public class L5RDraft extends Game {
 
     private Assets assets;
     private DraftScreen draftScreen;
+    //private TestScreen testScreen;
     //private LoadingScreen loadingScreen;
 
     private Draft draft;
@@ -49,6 +51,7 @@ public class L5RDraft extends Game {
         drafters.add(new Drafter("_ai6"));
         draft = new Draft(PackFactory.createPacks(cardList), drafters);
         draftScreen = new DraftScreen(this);
+        //testScreen = new TestScreen(this);
         this.setScreen(draftScreen);
     }
 

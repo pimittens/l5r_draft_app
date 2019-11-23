@@ -61,18 +61,23 @@ public class DraftScreen extends AbstractScreen {
      * @param button  the mouse button
      */
     public void click(int screenX, int screenY, int button) {
-        if (packView.getDimen().contains(screenX, screenY)) {
-            // click is inside the pack view, return true if they clicked a card
-            // this will also remove the card from the pack if one was clicked
-            if (packView.click(screenX, screenY)) {
-                // add the clicked card to the user's pool and give them a new pack
-                Card c = packView.getClickedCard();
-                Pack p = packView.getPack();
-                draft.pushPack(p, c, username);
-                draft.update();
-                packView.setPack(draft.getNextPack(username));
-                poolView.updatePool(draft.getPool(username));
+        if (button == 0) {
+            // left click
+            if (packView.getDimen().contains(screenX, screenY)) {
+                // click is inside the pack view, return true if they clicked a card
+                // this will also remove the card from the pack if one was clicked
+                if (packView.click(screenX, screenY)) {
+                    // add the clicked card to the user's pool and give them a new pack
+                    Card c = packView.getClickedCard();
+                    Pack p = packView.getPack();
+                    draft.pushPack(p, c, username);
+                    draft.update();
+                    packView.setPack(draft.getNextPack(username), getApp().getAssets());
+                    poolView.updatePool(draft.getPool(username));
+                }
             }
+        } else if (button == 1) {
+            // todo: right click
         }
     }
 

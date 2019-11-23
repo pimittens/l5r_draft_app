@@ -5,7 +5,7 @@ import com.mygdx.l5rdraft.screen.DraftScreen;
 
 public class InputProcessor extends InputAdapter {
 
-    DraftScreen screen;
+    private DraftScreen screen;
 
     public InputProcessor(DraftScreen screen) {
         this.screen = screen;
