@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d03e368-a5d5-434e-816f-fc3d7c5bf365" name="Default Changelist" comment="pack view finished and clicking cards to remove them working">
-      <change afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Draft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/annotation-processors.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/Assets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/L5RDraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/L5RDraft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/Card.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/Pack.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/Pack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/PackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/PackFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/PoolView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/packs/PoolView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DraftScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DraftScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/LoadingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/LoadingScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/L5RDraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/L5RDraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Drafter.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Drafter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pack.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/PackFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/PackFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/PackView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/PackView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/Pool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/PoolView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/packs/PoolView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DraftScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DraftScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/LoadingScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/LoadingScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Draft.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

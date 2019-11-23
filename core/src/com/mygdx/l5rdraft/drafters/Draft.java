@@ -22,13 +22,28 @@ public class Draft {
         }
     }
 
+    private void getMorePacks() {
+        
+    }
+
     /**
      * pushes a pack to the next drafter
      *
      * @param pack the pack
+     * @param drafterName the drafter who just picked from the pack
      */
-    public void pushPack(Pack pack) {
-
+    public void pushPack(Pack pack, String drafterName) {
+        for (int i = 0; i < drafters.size(); i++) {
+            if (drafters.get(i).getName().equals(drafterName)) {
+                int nextPos = i + 1;
+                if (nextPos >= playerQueues.size()) {
+                    nextPos = 0;
+                }
+                playerQueues.get(nextPos).add(pack);
+                return;
+            }
+        }
+        // note: if the drafter's name cannot be found the pack will be lost
     }
 
     /**
