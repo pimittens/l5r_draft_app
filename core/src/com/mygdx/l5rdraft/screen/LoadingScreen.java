@@ -43,7 +43,7 @@ public class LoadingScreen extends AbstractScreen {
     public void render(float delta) {
         shapes.begin(ShapeRenderer.ShapeType.Filled);
         shapes.setColor(Color.RED);
-        shapes.rect(10, 10, (screenWidth - 20) * getApp().getAssets().getProgress(), 100);
+        //shapes.rect(10, 10, (screenWidth - 20) * getApp().getAssets().getProgress(), 100);
         shapes.end();
         shapes.begin(ShapeRenderer.ShapeType.Line);
         shapes.setColor(Color.WHITE);

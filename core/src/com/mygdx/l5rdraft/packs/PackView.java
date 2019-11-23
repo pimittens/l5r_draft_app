@@ -4,6 +4,10 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
+import com.mygdx.l5rdraft.Assets;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * view that displays a pack of cards for the user to pick from
@@ -11,6 +15,7 @@ import com.badlogic.gdx.math.Rectangle;
 public class PackView {
 
     private Pack pack;
+    private List<Texture> cardImages;
 
     private Card clickedCard;
 
@@ -21,8 +26,9 @@ public class PackView {
 
     private ShapeRenderer shapes;
 
-    public PackView(Pack pack, Rectangle dimen) {
+    public PackView(Pack pack, Rectangle dimen, Assets assets) {
         this.pack = pack;
+        generateCardImages(assets);
         this.dimen = dimen;
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
@@ -68,10 +74,8 @@ public class PackView {
 
     public void render(SpriteBatch batch) {
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
-        Texture t;
         for (int i = 0; i < pack.size(); i++) {
-            t = pack.getCardImage(i);
-            batch.draw(t, nextX, nextY, cardWidth, cardHeight);
+            batch.draw(cardImages.get(i), nextX, nextY, cardWidth, cardHeight);
             nextX += cardWidth + buffer;
             if (i % 6 == 5) {
                 nextX = dimen.x + buffer;
@@ -96,5 +100,12 @@ public class PackView {
         dimen = new Rectangle(10, 10, width * 0.8f - 20, height - 20);
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
+    }
+
+    private void generateCardImages(Assets assets) {
+        cardImages = new ArrayList<>();
+        for (Card c : pack.getCards()) {
+            cardImages.add(assets.get(c.getName()));
+        }
     }
 }

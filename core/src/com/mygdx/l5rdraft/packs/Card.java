@@ -38,4 +38,17 @@ public class Card {
         }
         return RARITY.COMMON;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Card) {
+            Card c = (Card) obj;
+            return this.name.equals(c.name) && this.rarity == c.rarity;
+        }
+        return false;
+    }
+
+    public Card copy() {
+        return new Card(name, rarity);
+    }
 }

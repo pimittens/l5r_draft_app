@@ -11,6 +11,7 @@ import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.Assets;
 import com.mygdx.l5rdraft.InputProcessor;
 import com.mygdx.l5rdraft.L5RDraft;
+import com.mygdx.l5rdraft.drafters.Draft;
 import com.mygdx.l5rdraft.packs.Card;
 import com.mygdx.l5rdraft.packs.PackFactory;
 import com.mygdx.l5rdraft.packs.PackView;
@@ -32,18 +33,20 @@ public class DraftScreen extends AbstractScreen {
     private PackView packView;
     private PoolView poolView;
 
+    private Draft draft;
+
     public DraftScreen(L5RDraft app) {
         super(app);
+        draft = getApp().getDraft();
         height = Gdx.graphics.getHeight();
         fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("BTTTRIAL.otf"));
         parameters = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameters.size = 30;
         font = fontGenerator.generateFont(parameters);
-        //font.setColor(Color.WHITE);
         batch = new SpriteBatch();
         input = new InputProcessor(this);
         shapes = new ShapeRenderer();
-        packView = new PackView(PackFactory.createPack(app.getAssets(), app.getCardList()), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.8f - 20, Gdx.graphics.getHeight() - 20));
+        packView = new PackView(PackFactory.createPack(app.getCardList()), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.8f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
         poolView = new PoolView(new Rectangle(Gdx.graphics.getWidth() * 0.8f, 10, Gdx.graphics.getWidth() * 0.2f - 10, Gdx.graphics.getHeight() - 20));
     }
 
@@ -65,9 +68,7 @@ public class DraftScreen extends AbstractScreen {
             if (packView.click(screenX, screenY)) {
                 // add the clicked card to the user's pool and give them a new pack
                 Card c = packView.getClickedCard();
-                Texture t = getApp().getAssets().get(Assets.CARD_PATH + c.getName() + ".png", Texture.class);
-                t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
-                poolView.addCardToPool(c, t);
+                poolView.addCardToPool(c, getApp().getAssets());
             }
         }
     }

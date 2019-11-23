@@ -7,7 +7,9 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
+import com.mygdx.l5rdraft.drafters.Draft;
 import com.mygdx.l5rdraft.packs.Card;
+import com.mygdx.l5rdraft.packs.PackFactory;
 import com.mygdx.l5rdraft.screen.AbstractScreen;
 import com.mygdx.l5rdraft.screen.DraftScreen;
 import com.mygdx.l5rdraft.screen.LoadingScreen;
@@ -19,7 +21,9 @@ public class L5RDraft extends Game {
 
     private Assets assets;
     private DraftScreen draftScreen;
-    private LoadingScreen loadingScreen;
+    //private LoadingScreen loadingScreen;
+
+    private Draft draft;
 
     // list of all cards used
     private List<Card> cardList;
@@ -29,14 +33,20 @@ public class L5RDraft extends Game {
         Gdx.app.getGraphics().setTitle("l5r draft");
         loadAllCards();
         assets = new Assets();
-        assets.load(cardList);
+        //assets.load(cardList);
         //assets.manager.finishLoading();
-        loadingScreen = new LoadingScreen(this);
-        this.setScreen(loadingScreen);
+        //loadingScreen = new LoadingScreen(this);
+        draft = new Draft(PackFactory.createPacks(cardList));
+        draftScreen = new DraftScreen(this);
+        this.setScreen(draftScreen);
     }
 
-    public AssetManager getAssets() {
-        return assets.manager;
+    public Assets getAssets() {
+        return assets;
+    }
+
+    public Draft getDraft() {
+        return draft;
     }
 
     public List<Card> getCardList() {
@@ -49,7 +59,7 @@ public class L5RDraft extends Game {
         if (getScreen() instanceof AbstractScreen) {
             ((AbstractScreen) getScreen()).update(Gdx.graphics.getDeltaTime());
         }
-        if (getScreen() instanceof LoadingScreen) {
+        /*if (getScreen() instanceof LoadingScreen) {
             try {
                 if (getAssets().update()) {
                     draftScreen = new DraftScreen(this);
@@ -58,7 +68,7 @@ public class L5RDraft extends Game {
             } catch (GdxRuntimeException ex) {
                 ex.printStackTrace();
             }
-        }
+        }*/
         // render
         Gdx.gl.glClearColor(0f, 0f, 0f, 1f);
         //Gdx.gl.glBlendFunc(GL20.GL_SRC_ALPHA, GL20.GL_ONE_MINUS_SRC_ALPHA);
@@ -74,13 +84,13 @@ public class L5RDraft extends Game {
     private void loadAllCards() {
         cardList = new ArrayList<>();
         loadCards("neutral");
-        // disabled for testing loadCards("crab");
-        // disabled for testing loadCards("crane");
-        // disabled for testing loadCards("dragon");
-        // disabled for testing loadCards("lion");
-        // disabled for testing loadCards("phoenix");
-        // disabled for testing loadCards("scorpion");
-        // disabled for testing loadCards("unicorn");
+        loadCards("crab");
+        loadCards("crane");
+        loadCards("dragon");
+        loadCards("lion");
+        loadCards("phoenix");
+        loadCards("scorpion");
+        loadCards("unicorn");
     }
 
     private void loadCards(String fileName) {
@@ -103,10 +113,6 @@ public class L5RDraft extends Game {
                     rarity = Card.RARITY.COMMON;
                     break;
             }
-            if (rarity != Card.RARITY.PROVINCE) {
-            	// for testing since we don't have the rest of the images yet
-            	continue;
-			}
             cardList.add(new Card(card.getString("name"), rarity));
         }
     }
