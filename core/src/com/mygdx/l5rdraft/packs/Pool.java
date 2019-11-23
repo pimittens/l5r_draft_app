@@ -9,25 +9,32 @@ import java.util.List;
 
 public class Pool {
     private List<Card> cards;
-    private List<Texture> cardImages;
     private List<Integer> quantities;
 
     public Pool() {
         cards = new ArrayList<>();
-        cardImages = new ArrayList<>();
         quantities = new ArrayList<>();
     }
 
-    public void addCard(Card c, Assets assets) {
+    /**
+     * adds a card to the pool
+     * if the card is already in the pool the quantity is updated instead
+     * return true if the card was added to the pool or false if
+     * the card was already in the pool and the quantity was updated
+     *
+     * @param c the card to add
+     * @return true if the card was added, false if the quantity was updated
+     */
+    public boolean addCard(Card c) {
         for (int i = 0; i < cards.size(); i++) {
             if (cards.get(i).equals(c)) {
                 quantities.set(i, quantities.get(i) + 1);
-                return;
+                return false;
             }
         }
-        cardImages.add(assets.get(c.getName()));
         cards.add(c);
         quantities.add(1);
+        return true;
     }
 
     public Card getCard(int pos) {
@@ -40,17 +47,6 @@ public class Pool {
 
     public List<Card> getCards() {
         return cards;
-    }
-
-    /*public Card popCard(int pos) {
-        Card ret = cards.remove(pos);
-        cardImages.remove(pos);
-        quantities.remove(pos);
-        return ret;
-    }*/
-
-    public Texture getCardImage(int pos) {
-        return pos < cardImages.size() ? cardImages.get(pos) : cardImages.get(0);
     }
 
     public int size() {

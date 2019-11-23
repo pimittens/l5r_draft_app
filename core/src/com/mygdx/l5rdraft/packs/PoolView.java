@@ -7,6 +7,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.Assets;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * a view that displays the pool of cards the user has picked
  */
@@ -15,6 +18,7 @@ public class PoolView {
     private float buffer = 25f;
 
     private Pool pool;
+    private List<Texture> cardImages;
 
     private Rectangle dimen;
 
@@ -22,12 +26,15 @@ public class PoolView {
 
     public PoolView(Rectangle dimen) {
         pool = new Pool();
+        cardImages = new ArrayList<>();
         this.dimen = dimen;
         layout = new GlyphLayout();
     }
 
     public void addCardToPool(Card c, Assets assets) {
-        pool.addCard(c, assets);
+        if (pool.addCard(c)) {
+            cardImages.add(assets.get(c.getName()));
+        }
     }
 
     public Rectangle getDimen() {

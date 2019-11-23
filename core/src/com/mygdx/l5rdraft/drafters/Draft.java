@@ -1,6 +1,7 @@
 package com.mygdx.l5rdraft.drafters;
 
 import com.badlogic.gdx.math.MathUtils;
+import com.mygdx.l5rdraft.packs.Card;
 import com.mygdx.l5rdraft.packs.Pack;
 
 import java.util.ArrayList;
@@ -41,6 +42,12 @@ public class Draft {
      * should be called each time before a pack is pushed or pulled
      */
     public void update() {
+        // ai actions
+        for (Drafter d : drafters) {
+            if (d.isAi()) {
+                d.act(this);
+            }
+        }
         // check if the round is over
         if (roundIsOver()) {
             roundNumber += 1;
@@ -49,7 +56,6 @@ public class Draft {
                 draftIsOver = true;
             }
         }
-
     }
 
     /**
@@ -91,13 +97,15 @@ public class Draft {
     /**
      * pushes a pack to the next drafter
      *
-     * @param pack        the pack
+     * @param pack        the pack after a card was picked
+     * @param card        the card that was picked
      * @param drafterName the drafter who just picked from the pack
      */
-    public void pushPack(Pack pack, String drafterName) {
+    public void pushPack(Pack pack, Card card, String drafterName) {
         for (int i = 0; i < drafters.size(); i++) {
             if (drafters.get(i).getName().equals(drafterName)) {
                 // todo: validate the pack maybe
+                drafters.get(i).getPool().addCard(card);
                 drafters.get(i).checkInPack();
                 int nextPos = i + 1;
                 if (nextPos >= playerQueues.size()) {
@@ -126,6 +134,4 @@ public class Draft {
         }
         return null;
     }
-
-    // todo: check if all the packs are empty to move on to the next pack
 }

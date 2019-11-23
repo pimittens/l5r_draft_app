@@ -8,6 +8,7 @@ import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
 import com.mygdx.l5rdraft.drafters.Draft;
+import com.mygdx.l5rdraft.drafters.Drafter;
 import com.mygdx.l5rdraft.packs.Card;
 import com.mygdx.l5rdraft.packs.PackFactory;
 import com.mygdx.l5rdraft.screen.AbstractScreen;
@@ -36,7 +37,17 @@ public class L5RDraft extends Game {
         //assets.load(cardList);
         //assets.manager.finishLoading();
         //loadingScreen = new LoadingScreen(this);
-        draft = new Draft(PackFactory.createPacks(cardList));
+        // hard coded drafters
+        List<Drafter> drafters = new ArrayList<>();
+        drafters.add(new Drafter("user"));
+        drafters.add(new Drafter("_ai0"));
+        drafters.add(new Drafter("_ai1"));
+        drafters.add(new Drafter("_ai2"));
+        drafters.add(new Drafter("_ai3"));
+        drafters.add(new Drafter("_ai4"));
+        drafters.add(new Drafter("_ai5"));
+        drafters.add(new Drafter("_ai6"));
+        draft = new Draft(PackFactory.createPacks(cardList), drafters);
         draftScreen = new DraftScreen(this);
         this.setScreen(draftScreen);
     }
