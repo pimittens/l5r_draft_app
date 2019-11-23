@@ -27,16 +27,24 @@ public class PackView {
     private ShapeRenderer shapes;
 
     public PackView(Pack pack, Rectangle dimen, Assets assets) {
-        this.pack = pack;
-        generateCardImages(assets);
+        setPack(pack, assets);
         this.dimen = dimen;
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
         shapes = new ShapeRenderer();
     }
 
-    public void setPack(Pack pack) {
+    public void setPack(Pack pack, Assets assets) {
         this.pack = pack;
+        generateCardImages(assets);
+    }
+
+    public Pack getPack() {
+        return pack;
+    }
+
+    private boolean notHasPack() {
+        return pack == null;
     }
 
     public Rectangle getDimen() {
@@ -55,6 +63,9 @@ public class PackView {
      * @return true if a card was clicked
      */
     public boolean click(int screenX, int screenY) {
+        if (notHasPack()) {
+            return false;
+        }
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
         Rectangle nextCardBounds;
         for (int i = 0; i < pack.size(); i++) {
@@ -73,6 +84,9 @@ public class PackView {
     }
 
     public void render(SpriteBatch batch) {
+        if (notHasPack()) {
+            return;
+        }
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
         for (int i = 0; i < pack.size(); i++) {
             batch.draw(cardImages.get(i), nextX, nextY, cardWidth, cardHeight);
@@ -85,6 +99,9 @@ public class PackView {
     }
 
     public void renderShapes(ShapeRenderer shapes) {
+        if (notHasPack()) {
+            return;
+        }
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
         for (int i = 0; i < pack.size(); i++) {
             shapes.rect(nextX, nextY, cardWidth, cardHeight);

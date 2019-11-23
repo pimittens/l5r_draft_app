@@ -31,10 +31,8 @@ public class PoolView {
         layout = new GlyphLayout();
     }
 
-    public void addCardToPool(Card c, Assets assets) {
-        if (pool.addCard(c)) {
-            cardImages.add(assets.get(c.getName()));
-        }
+    public void updatePool(Pool p) {
+        pool = p;
     }
 
     public Rectangle getDimen() {
@@ -44,6 +42,9 @@ public class PoolView {
     // todo: scrolling
 
     public void render(SpriteBatch batch, BitmapFont font) {
+        if (pool == null) {
+            return;
+        }
         float startX = dimen.x + buffer, nextY = dimen.y + dimen.height - buffer;
         String cardName;
         for (int i = 0; i < pool.size(); i++) {

@@ -12,10 +12,7 @@ import com.mygdx.l5rdraft.Assets;
 import com.mygdx.l5rdraft.InputProcessor;
 import com.mygdx.l5rdraft.L5RDraft;
 import com.mygdx.l5rdraft.drafters.Draft;
-import com.mygdx.l5rdraft.packs.Card;
-import com.mygdx.l5rdraft.packs.PackFactory;
-import com.mygdx.l5rdraft.packs.PackView;
-import com.mygdx.l5rdraft.packs.PoolView;
+import com.mygdx.l5rdraft.packs.*;
 import javafx.scene.layout.BackgroundImage;
 
 public class DraftScreen extends AbstractScreen {
@@ -34,9 +31,11 @@ public class DraftScreen extends AbstractScreen {
     private PoolView poolView;
 
     private Draft draft;
+    private String username;
 
     public DraftScreen(L5RDraft app) {
         super(app);
+        username = "user";
         draft = getApp().getDraft();
         height = Gdx.graphics.getHeight();
         fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("BTTTRIAL.otf"));
@@ -68,7 +67,11 @@ public class DraftScreen extends AbstractScreen {
             if (packView.click(screenX, screenY)) {
                 // add the clicked card to the user's pool and give them a new pack
                 Card c = packView.getClickedCard();
-                poolView.addCardToPool(c, getApp().getAssets());
+                Pack p = packView.getPack();
+                draft.pushPack(p, c, username);
+                draft.update();
+                packView.setPack(draft.getNextPack(username));
+                poolView.updatePool(draft.getPool(username));
             }
         }
     }

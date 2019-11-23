@@ -3,6 +3,7 @@ package com.mygdx.l5rdraft.drafters;
 import com.badlogic.gdx.math.MathUtils;
 import com.mygdx.l5rdraft.packs.Card;
 import com.mygdx.l5rdraft.packs.Pack;
+import com.mygdx.l5rdraft.packs.Pool;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -35,6 +36,15 @@ public class Draft {
 
     public int getRoundNumber() {
         return roundNumber;
+    }
+
+    public Pool getPool(String drafterName) {
+        for (Drafter d : drafters) {
+            if (d.getName().equals(drafterName)) {
+                return d.getPool();
+            }
+        }
+        return null;
     }
 
     /**
