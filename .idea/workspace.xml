@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3d03e368-a5d5-434e-816f-fc3d7c5bf365" name="Default Changelist" comment="pack view finished and clicking cards to remove them working">
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Draft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Drafter.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/drafters/Drafter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
