@@ -2,10 +2,7 @@
 drafting app for l5r
 
 current task:
-finish the card pool view
-add a pool class: same as pack but also has quantities for each card
-adding a card to a pool should first check if the card is already in the pool
-if it is, just update the quantity
+working on draft class, need to import all the remaining images
 1450x2083
 .7
 
