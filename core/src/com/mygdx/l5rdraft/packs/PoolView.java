@@ -5,7 +5,6 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
-import com.mygdx.l5rdraft.Assets;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -50,20 +49,12 @@ public class PoolView {
         for (int i = 0; i < pool.size(); i++) {
             cardName = pool.getCard(i).getName().replace("_", " ");
             layout.setText(font, cardName);
-            font.draw(batch, cardName + " x" + numFormat(pool.getQuantity(i)), startX, nextY);
+            font.draw(batch, String.format("%s x%s", cardName, pool.getQuantity(i)), startX, nextY);
             nextY -= layout.height * 2 + buffer;
         }
     }
 
     public void resize(int width, int height) {
-        dimen = new Rectangle( width * 0.8f, 10, width * 0.2f - 10, height - 20);
-    }
-
-    private String numFormat(int i) {
-        StringBuilder ret = new StringBuilder();
-        for (int j = 0; j < i; j++) {
-            ret.append("I");
-        }
-        return ret.toString();
+        dimen = new Rectangle( width * 0.8f, 10, width * 0.2f - 10, height * 0.95f - 20);
     }
 }

@@ -30,6 +30,10 @@ public class Draft {
         }
     }
 
+    public void startDraft() {
+        getMorePacks();
+    }
+
     public boolean draftIsOver() {
         return draftIsOver;
     }
@@ -117,6 +121,10 @@ public class Draft {
                 // todo: validate the pack maybe
                 drafters.get(i).getPool().addCard(card);
                 drafters.get(i).checkInPack();
+                if (pack.size() < 1) {
+                    // pack has no cards left
+                    return;
+                }
                 int nextPos = i + 1;
                 if (nextPos >= playerQueues.size()) {
                     nextPos = 0;

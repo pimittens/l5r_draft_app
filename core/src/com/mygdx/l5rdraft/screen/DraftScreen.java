@@ -25,7 +25,7 @@ public class DraftScreen extends AbstractScreen {
     private FreeTypeFontGenerator.FreeTypeFontParameter parameters;
     private BitmapFont font;
 
-    private int height;
+    private int height, width;
 
     private PackView packView;
     private PoolView poolView;
@@ -38,19 +38,23 @@ public class DraftScreen extends AbstractScreen {
         username = "user";
         draft = getApp().getDraft();
         height = Gdx.graphics.getHeight();
-        fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("BTTTRIAL.otf"));
+        width = Gdx.graphics.getWidth();
+        fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("Helvetica-Normal.ttf"));
         parameters = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameters.size = 30;
         font = fontGenerator.generateFont(parameters);
         batch = new SpriteBatch();
         input = new InputProcessor(this);
         shapes = new ShapeRenderer();
-        packView = new PackView(PackFactory.createPack(app.getCardList()), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.8f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
-        poolView = new PoolView(new Rectangle(Gdx.graphics.getWidth() * 0.8f, 10, Gdx.graphics.getWidth() * 0.2f - 10, Gdx.graphics.getHeight() - 20));
+        packView = new PackView(draft.getNextPack(username), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.8f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
+        poolView = new PoolView(new Rectangle(Gdx.graphics.getWidth() * 0.8f, 10, Gdx.graphics.getWidth() * 0.2f - 10, Gdx.graphics.getHeight() * 0.95f - 20));
     }
 
     public int getHeight() {
         return height;
+    }
+    public int getWidth() {
+        return width;
     }
 
     /**
@@ -67,12 +71,12 @@ public class DraftScreen extends AbstractScreen {
                 // click is inside the pack view, return true if they clicked a card
                 // this will also remove the card from the pack if one was clicked
                 if (packView.click(screenX, screenY)) {
-                    // add the clicked card to the user's pool and give them a new pack
+                    // add the clicked card to the user's pool and check the pack back in
                     Card c = packView.getClickedCard();
                     Pack p = packView.getPack();
+                    packView.clearPack();
                     draft.pushPack(p, c, username);
                     draft.update();
-                    packView.setPack(draft.getNextPack(username), getApp().getAssets());
                     poolView.updatePool(draft.getPool(username));
                 }
             }
@@ -101,6 +105,11 @@ public class DraftScreen extends AbstractScreen {
     public void update(float delta) {
         // update input processors
         //playerMovementProcessor.update(delta);
+        // todo: only get a new pack if the textures are loaded
+        // also load the next pack before hand
+        if (packView.notHasPack()) {
+            packView.setPack(draft.getNextPack(username), getApp().getAssets());
+        }
     }
 
     @Override
@@ -108,6 +117,11 @@ public class DraftScreen extends AbstractScreen {
         batch.begin();
         packView.render(batch);
         poolView.render(batch, font);
+        if (draft.draftIsOver()) {
+            font.draw(batch, "draft complete", getWidth() * 0.87f, getHeight() * 0.98f);
+        } else {
+            font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.87f, getHeight() * 0.98f);
+        }
         batch.end();
 
         // don't use shape renderer between batch.begin and batch.end
@@ -124,6 +138,7 @@ public class DraftScreen extends AbstractScreen {
     @Override
     public void resize(int width, int height) {
         this.height = height;
+        this.width = width;
         batch.getProjectionMatrix().setToOrtho2D(0, 0, width, height);
         shapes.setProjectionMatrix(batch.getProjectionMatrix());
         packView.resize(width, height);

@@ -24,26 +24,29 @@ public class PackView {
     // todo: use less rows/cols if there are less cards
     private float buffer = 5f, cardWidth, cardHeight;
 
-    private ShapeRenderer shapes;
-
     public PackView(Pack pack, Rectangle dimen, Assets assets) {
         setPack(pack, assets);
         this.dimen = dimen;
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
-        shapes = new ShapeRenderer();
     }
 
     public void setPack(Pack pack, Assets assets) {
         this.pack = pack;
-        generateCardImages(assets);
+        if (pack != null) {
+            generateCardImages(assets);
+        }
+    }
+
+    public void clearPack() {
+        pack = null;
     }
 
     public Pack getPack() {
         return pack;
     }
 
-    private boolean notHasPack() {
+    public boolean notHasPack() {
         return pack == null;
     }
 

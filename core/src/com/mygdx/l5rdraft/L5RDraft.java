@@ -50,6 +50,7 @@ public class L5RDraft extends Game {
         drafters.add(new Drafter("_ai5"));
         drafters.add(new Drafter("_ai6"));
         draft = new Draft(PackFactory.createPacks(cardList), drafters);
+        draft.startDraft();
         draftScreen = new DraftScreen(this);
         //testScreen = new TestScreen(this);
         this.setScreen(draftScreen);

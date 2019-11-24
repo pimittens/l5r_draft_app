@@ -39,6 +39,7 @@ public class InputProcessor extends InputAdapter {
 
     @Override
     public boolean touchDragged(int screenX, int screenY, int pointer) {
+        System.out.println("test1 - " + pointer);
         return super.touchDragged(screenX, screenY, pointer);
     }
 
@@ -49,6 +50,8 @@ public class InputProcessor extends InputAdapter {
 
     @Override
     public boolean scrolled(int amount) {
+        // down is 1, up is -1
+        //screen.scroll(amount);
         return super.scrolled(amount);
     }
 }
