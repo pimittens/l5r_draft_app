@@ -16,6 +16,7 @@ public class PackView {
 
     private Pack pack;
     private List<Texture> cardImages;
+    private Texture star;
 
     private Card clickedCard;
 
@@ -26,6 +27,7 @@ public class PackView {
 
     public PackView(Pack pack, Rectangle dimen, Assets assets) {
         setPack(pack, assets);
+        star = assets.getStar();
         this.dimen = dimen;
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
@@ -93,6 +95,9 @@ public class PackView {
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
         for (int i = 0; i < pack.size(); i++) {
             batch.draw(cardImages.get(i), nextX, nextY, cardWidth, cardHeight);
+            if (pack.getCard(i).getRarity() == Card.RARITY.RARE) {
+                batch.draw(star, nextX + cardWidth * 0.45f, nextY, cardWidth * 0.1f, cardWidth * 0.1f);
+            }
             nextX += cardWidth + buffer;
             if (i % 6 == 5) {
                 nextX = dimen.x + buffer;

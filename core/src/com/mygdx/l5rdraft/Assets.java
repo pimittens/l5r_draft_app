@@ -3,10 +3,12 @@ package com.mygdx.l5rdraft;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.TextureLoader;
 import com.badlogic.gdx.graphics.Texture;
+import org.w3c.dom.Text;
 
 public class Assets {
 
     public static final String CARD_PATH = "cards/";
+    public static final String STAR = "star.png";
 
     private AssetManager manager;
     private TextureLoader.TextureParameter textureParameter;
@@ -17,11 +19,13 @@ public class Assets {
         textureParameter.genMipMaps = true;
     }
 
-    /*public void load(List<Card> cards) {
-        for (Card c : cards) {
-            manager.load(CARD_PATH + c.getName() + ".png", Texture.class, textureParameter);
-        }
-    }*/
+    public void finishLoading() {
+        manager.finishLoading();
+    }
+
+    public void load() {
+        manager.load(STAR, Texture.class, textureParameter);
+    }
 
     /**
      * gets the texture for a card. loads the texture if it is not loaded yet
@@ -35,6 +39,12 @@ public class Assets {
             manager.finishLoading();
         }
         Texture t = manager.get(CARD_PATH + cardName + ".png", Texture.class);
+        t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
+        return t;
+    }
+
+    public Texture getStar() {
+        Texture t = manager.get(STAR, Texture.class);
         t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
         return t;
     }

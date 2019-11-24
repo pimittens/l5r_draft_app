@@ -36,8 +36,8 @@ public class L5RDraft extends Game {
         Gdx.app.getGraphics().setTitle("l5r draft");
         loadAllCards();
         assets = new Assets();
-        //assets.load(cardList);
-        //assets.manager.finishLoading();
+        assets.load();
+        assets.finishLoading();
         //loadingScreen = new LoadingScreen(this);
         // hard coded drafters
         List<Drafter> drafters = new ArrayList<>();
