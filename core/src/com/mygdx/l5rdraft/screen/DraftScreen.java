@@ -33,12 +33,15 @@ public class DraftScreen extends AbstractScreen {
     private Draft draft;
     private String username;
 
+    private boolean loadingTextures;
+
     public DraftScreen(L5RDraft app) {
         super(app);
         username = "user";
         draft = getApp().getDraft();
         height = Gdx.graphics.getHeight();
         width = Gdx.graphics.getWidth();
+        loadingTextures = true;
         fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("Helvetica-Normal.ttf"));
         parameters = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameters.size = 30;
@@ -46,8 +49,8 @@ public class DraftScreen extends AbstractScreen {
         batch = new SpriteBatch();
         input = new InputProcessor(this);
         shapes = new ShapeRenderer();
-        packView = new PackView(draft.getNextPack(username), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.8f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
-        poolView = new PoolView(new Rectangle(Gdx.graphics.getWidth() * 0.8f, 10, Gdx.graphics.getWidth() * 0.2f - 10, Gdx.graphics.getHeight() * 0.95f - 20));
+        packView = new PackView(draft.getNextPack(username), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.75f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
+        poolView = new PoolView(new Rectangle(Gdx.graphics.getWidth() * 0.75f, 10, Gdx.graphics.getWidth() * 0.25f - 10, Gdx.graphics.getHeight() * 0.95f - 20));
     }
 
     public int getHeight() {
@@ -85,6 +88,12 @@ public class DraftScreen extends AbstractScreen {
         }
     }
 
+    public void scroll(int mouseX, int mouseY, int amount) {
+        if (poolView.getDimen().contains(mouseX, mouseY)) {
+            poolView.scroll(amount);
+        }
+    }
+
     @Override
     public void dispose() {
         batch.dispose();
@@ -109,6 +118,13 @@ public class DraftScreen extends AbstractScreen {
         // also load the next pack before hand
         if (packView.notHasPack()) {
             packView.setPack(draft.getNextPack(username), getApp().getAssets());
+            if (!packView.notHasPack()) {
+                loadingTextures = true;
+            }
+        }
+        if (loadingTextures) {
+            getApp().getAssets().update();
+            loadingTextures = !packView.updateCardImages(getApp().getAssets());
         }
     }
 
@@ -118,9 +134,9 @@ public class DraftScreen extends AbstractScreen {
         packView.render(batch);
         poolView.render(batch, font);
         if (draft.draftIsOver()) {
-            font.draw(batch, "draft complete", getWidth() * 0.87f, getHeight() * 0.98f);
+            font.draw(batch, "draft complete", getWidth() * 0.82f, getHeight() * 0.98f);
         } else {
-            font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.87f, getHeight() * 0.98f);
+            font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.85f, getHeight() * 0.98f);
         }
         batch.end();
 
@@ -142,7 +158,7 @@ public class DraftScreen extends AbstractScreen {
         batch.getProjectionMatrix().setToOrtho2D(0, 0, width, height);
         shapes.setProjectionMatrix(batch.getProjectionMatrix());
         packView.resize(width, height);
-        poolView.resize(width, height);
+        poolView.resize(width, height, font);
         // todo: change font size here
     }
 

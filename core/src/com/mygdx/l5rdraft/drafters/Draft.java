@@ -100,7 +100,7 @@ public class Draft {
      */
     private boolean getMorePacks() {
         if (packs.size() < drafters.size()) {
-            return true;
+            return false;
         }
         for (Queue<Pack> q : playerQueues) {
             q.add(packs.remove(MathUtils.random(packs.size() - 1)));

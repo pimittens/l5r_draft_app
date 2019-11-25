@@ -14,10 +14,12 @@ import java.util.List;
  */
 public class PoolView {
 
-    private float buffer = 25f;
+    private float buffer = 10f;
 
     private Pool pool;
     private List<Texture> cardImages;
+    private int camera;
+    private float textHeight;
 
     private Rectangle dimen;
 
@@ -25,9 +27,11 @@ public class PoolView {
 
     public PoolView(Rectangle dimen) {
         pool = new Pool();
+        camera = 0;
         cardImages = new ArrayList<>();
         this.dimen = dimen;
         layout = new GlyphLayout();
+        textHeight = 0;
     }
 
     public void updatePool(Pool p) {
@@ -38,7 +42,21 @@ public class PoolView {
         return dimen;
     }
 
-    // todo: scrolling
+    public void scroll(int amount) {
+        if ((textHeight * 2 + buffer) * pool.size() < dimen.height) {
+            // if the number of text lines doesn't span the view don't move the camera
+            camera = 0;
+            return;
+        }
+        if (amount < 0 && (dimen.y + dimen.height - buffer) - ((textHeight * 2 + buffer) * pool.size()) + camera > dimen.y) {
+            return;
+        }
+        camera += amount * -20;
+        if (camera < 0) {
+            // camera should never be less than 0 bc that's where the top of the list is
+            camera = 0;
+        }
+    }
 
     public void render(SpriteBatch batch, BitmapFont font) {
         if (pool == null) {
@@ -48,13 +66,16 @@ public class PoolView {
         String cardName;
         for (int i = 0; i < pool.size(); i++) {
             cardName = pool.getCard(i).getName().replace("_", " ");
-            layout.setText(font, cardName);
-            font.draw(batch, String.format("%s x%s", cardName, pool.getQuantity(i)), startX, nextY);
-            nextY -= layout.height * 2 + buffer;
+            if (dimen.contains(startX, nextY + camera) && dimen.contains(startX, nextY + camera - textHeight)) {
+                font.draw(batch, String.format("%s x%s", cardName, pool.getQuantity(i)), startX, nextY + camera);
+            }
+            nextY -= textHeight * 2 + buffer;
         }
     }
 
-    public void resize(int width, int height) {
-        dimen = new Rectangle( width * 0.8f, 10, width * 0.2f - 10, height * 0.95f - 20);
+    public void resize(int width, int height, BitmapFont font) {
+        dimen = new Rectangle(width * 0.75f, 10, width * 0.25f - 10, height * 0.95f - 20);
+        layout.setText(font, "TEST");
+        textHeight = layout.height;
     }
 }

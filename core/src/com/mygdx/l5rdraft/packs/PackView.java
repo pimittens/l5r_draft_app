@@ -16,7 +16,7 @@ public class PackView {
 
     private Pack pack;
     private List<Texture> cardImages;
-    private Texture star;
+    private Texture star, loadingImage;
 
     private Card clickedCard;
 
@@ -28,6 +28,7 @@ public class PackView {
     public PackView(Pack pack, Rectangle dimen, Assets assets) {
         setPack(pack, assets);
         star = assets.getStar();
+        loadingImage = assets.getLoadingImage();
         this.dimen = dimen;
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
@@ -94,9 +95,13 @@ public class PackView {
         }
         float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
         for (int i = 0; i < pack.size(); i++) {
-            batch.draw(cardImages.get(i), nextX, nextY, cardWidth, cardHeight);
-            if (pack.getCard(i).getRarity() == Card.RARITY.RARE) {
-                batch.draw(star, nextX + cardWidth * 0.45f, nextY, cardWidth * 0.1f, cardWidth * 0.1f);
+            if (cardImages.get(i) == null) {
+                batch.draw(loadingImage, nextX, nextY, cardWidth, cardHeight);
+            } else {
+                batch.draw(cardImages.get(i), nextX, nextY, cardWidth, cardHeight);
+                if (pack.getCard(i).getRarity() == Card.RARITY.RARE) {
+                    batch.draw(star, nextX + cardWidth * 0.45f, nextY, cardWidth * 0.1f, cardWidth * 0.1f);
+                }
             }
             nextX += cardWidth + buffer;
             if (i % 6 == 5) {
@@ -122,7 +127,7 @@ public class PackView {
     }
 
     public void resize(int width, int height) {
-        dimen = new Rectangle(10, 10, width * 0.8f - 20, height - 20);
+        dimen = new Rectangle(10, 10, width * 0.75f - 20, height - 20);
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
     }
@@ -132,5 +137,22 @@ public class PackView {
         for (Card c : pack.getCards()) {
             cardImages.add(assets.get(c.getName()));
         }
+    }
+
+    public boolean updateCardImages(Assets assets) {
+        if (notHasPack()) {
+            return false;
+        }
+        boolean done = true;
+        for (int i = 0; i < cardImages.size(); i++) {
+            if (cardImages.get(i) == null) {
+                if (assets.isLoaded(pack.getCard(i).getName())) {
+                    cardImages.set(i, assets.get(pack.getCard(i).getName()));
+                } else {
+                    done = false;
+                }
+            }
+        }
+        return done;
     }
 }
