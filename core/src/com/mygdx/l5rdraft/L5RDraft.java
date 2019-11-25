@@ -2,19 +2,15 @@ package com.mygdx.l5rdraft;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.badlogic.gdx.utils.JsonReader;
 import com.badlogic.gdx.utils.JsonValue;
-import com.mygdx.l5rdraft.drafters.Draft;
-import com.mygdx.l5rdraft.drafters.Drafter;
-import com.mygdx.l5rdraft.packs.Card;
-import com.mygdx.l5rdraft.packs.PackFactory;
+import com.mygdx.l5rdraft.draft.Draft;
+import com.mygdx.l5rdraft.draft.Drafter;
+import com.mygdx.l5rdraft.cards.Card;
+import com.mygdx.l5rdraft.cards.PackFactory;
 import com.mygdx.l5rdraft.screen.AbstractScreen;
 import com.mygdx.l5rdraft.screen.DraftScreen;
-import com.mygdx.l5rdraft.screen.LoadingScreen;
-import com.mygdx.l5rdraft.screen.TestScreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +18,6 @@ import java.util.List;
 public class L5RDraft extends Game {
 
     private Assets assets;
-    private DraftScreen draftScreen;
     //private TestScreen testScreen;
     //private LoadingScreen loadingScreen;
 
@@ -51,9 +46,8 @@ public class L5RDraft extends Game {
         drafters.add(new Drafter("_ai6"));
         draft = new Draft(PackFactory.createPacks(cardList), drafters);
         draft.startDraft();
-        draftScreen = new DraftScreen(this);
         //testScreen = new TestScreen(this);
-        this.setScreen(draftScreen);
+        this.setScreen(new DraftScreen(this));
     }
 
     public Assets getAssets() {
@@ -94,6 +88,11 @@ public class L5RDraft extends Game {
     @Override
     public void dispose() {
         assets.dispose();
+    }
+
+    public void changeScreen(AbstractScreen newScreen) {
+        getScreen().dispose();
+        setScreen(newScreen);
     }
 
     private void loadAllCards() {

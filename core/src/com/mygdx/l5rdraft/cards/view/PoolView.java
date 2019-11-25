@@ -1,10 +1,11 @@
-package com.mygdx.l5rdraft.packs;
+package com.mygdx.l5rdraft.cards.view;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
+import com.mygdx.l5rdraft.cards.Pool;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -75,7 +76,8 @@ public class PoolView {
     }
 
     public void resize(int width, int height, BitmapFont font) {
-        dimen = new Rectangle(width * 0.75f, 10, width * 0.25f - 10, height * 0.95f - 20);
+        dimen.setPosition(width * 0.75f, 10);
+        dimen.setSize(width * 0.25f - 10, height * 0.95f - 20);
         layout.setText(font, "TEST");
         textHeight = layout.height;
     }

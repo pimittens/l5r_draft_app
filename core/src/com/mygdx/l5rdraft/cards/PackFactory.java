@@ -1,4 +1,4 @@
-package com.mygdx.l5rdraft.packs;
+package com.mygdx.l5rdraft.cards;
 
 import com.badlogic.gdx.math.MathUtils;
 

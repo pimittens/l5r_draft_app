@@ -1,6 +1,4 @@
-package com.mygdx.l5rdraft.packs;
-
-import com.badlogic.gdx.graphics.Texture;
+package com.mygdx.l5rdraft.cards;
 
 import java.util.ArrayList;
 import java.util.List;

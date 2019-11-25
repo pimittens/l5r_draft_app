@@ -1,18 +1,8 @@
-package com.mygdx.l5rdraft;
+package com.mygdx.l5rdraft.input;
 
 import com.badlogic.gdx.InputAdapter;
-import com.mygdx.l5rdraft.screen.DraftScreen;
 
-public class InputProcessor extends InputAdapter {
-
-    private DraftScreen screen;
-    private int mouseX, mouseY;
-
-    public InputProcessor(DraftScreen screen) {
-        this.screen = screen;
-        mouseX = -1;
-        mouseY = -1;
-    }
+public class DeckBuilderInputProcessor extends InputAdapter {
 
     @Override
     public boolean keyDown(int keycode) {
@@ -31,7 +21,7 @@ public class InputProcessor extends InputAdapter {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        screen.click(screenX, screen.getHeight() - screenY, button);
+        //screen.click(screenX, screen.getHeight() - screenY, button);
         return true;
     }
 
@@ -48,15 +38,12 @@ public class InputProcessor extends InputAdapter {
 
     @Override
     public boolean mouseMoved(int screenX, int screenY) {
-        mouseX = screenX;
-        mouseY = screen.getHeight() - screenY;
         return super.mouseMoved(screenX, screenY);
     }
 
     @Override
     public boolean scrolled(int amount) {
         // down is 1, up is -1
-        screen.scroll(mouseX, mouseY, amount);
         return super.scrolled(amount);
     }
 }

@@ -2,16 +2,7 @@ package com.mygdx.l5rdraft.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputAdapter;
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.math.Rectangle;
-import com.mygdx.l5rdraft.InputProcessor;
 import com.mygdx.l5rdraft.L5RDraft;
-import com.mygdx.l5rdraft.drafters.Draft;
-import com.mygdx.l5rdraft.packs.*;
 
 public class TestScreen extends AbstractScreen {
 

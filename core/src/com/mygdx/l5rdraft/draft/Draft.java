@@ -1,9 +1,9 @@
-package com.mygdx.l5rdraft.drafters;
+package com.mygdx.l5rdraft.draft;
 
 import com.badlogic.gdx.math.MathUtils;
-import com.mygdx.l5rdraft.packs.Card;
-import com.mygdx.l5rdraft.packs.Pack;
-import com.mygdx.l5rdraft.packs.Pool;
+import com.mygdx.l5rdraft.cards.Card;
+import com.mygdx.l5rdraft.cards.Pack;
+import com.mygdx.l5rdraft.cards.Pool;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

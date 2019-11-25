@@ -2,27 +2,25 @@ package com.mygdx.l5rdraft.screen;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
-import com.mygdx.l5rdraft.Assets;
-import com.mygdx.l5rdraft.InputProcessor;
+import com.mygdx.l5rdraft.input.DraftInputProcessor;
 import com.mygdx.l5rdraft.L5RDraft;
-import com.mygdx.l5rdraft.drafters.Draft;
-import com.mygdx.l5rdraft.packs.*;
-import javafx.scene.layout.BackgroundImage;
+import com.mygdx.l5rdraft.draft.Draft;
+import com.mygdx.l5rdraft.cards.*;
+import com.mygdx.l5rdraft.cards.view.PackView;
+import com.mygdx.l5rdraft.cards.view.PoolView;
 
 public class DraftScreen extends AbstractScreen {
 
     private SpriteBatch batch;
     private ShapeRenderer shapes;
-    private InputProcessor input;
+    private DraftInputProcessor input;
 
     private FreeTypeFontGenerator fontGenerator;
-    private FreeTypeFontGenerator.FreeTypeFontParameter parameters;
     private BitmapFont font;
 
     private int height, width;
@@ -43,11 +41,11 @@ public class DraftScreen extends AbstractScreen {
         width = Gdx.graphics.getWidth();
         loadingTextures = true;
         fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("Helvetica-Normal.ttf"));
-        parameters = new FreeTypeFontGenerator.FreeTypeFontParameter();
+        FreeTypeFontGenerator.FreeTypeFontParameter parameters = new FreeTypeFontGenerator.FreeTypeFontParameter();
         parameters.size = 30;
         font = fontGenerator.generateFont(parameters);
         batch = new SpriteBatch();
-        input = new InputProcessor(this);
+        input = new DraftInputProcessor(this);
         shapes = new ShapeRenderer();
         packView = new PackView(draft.getNextPack(username), new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.75f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
         poolView = new PoolView(new Rectangle(Gdx.graphics.getWidth() * 0.75f, 10, Gdx.graphics.getWidth() * 0.25f - 10, Gdx.graphics.getHeight() * 0.95f - 20));
@@ -56,7 +54,7 @@ public class DraftScreen extends AbstractScreen {
     public int getHeight() {
         return height;
     }
-    public int getWidth() {
+    private int getWidth() {
         return width;
     }
 
@@ -96,7 +94,9 @@ public class DraftScreen extends AbstractScreen {
 
     @Override
     public void dispose() {
+        Gdx.input.setInputProcessor(null);
         batch.dispose();
+        shapes.dispose();
         fontGenerator.dispose();
     }
 
@@ -112,7 +112,7 @@ public class DraftScreen extends AbstractScreen {
 
     @Override
     public void update(float delta) {
-        // todo: load the next pack before hand
+        // todo: load the next pack beforehand
         if (packView.notHasPack()) {
             packView.setPack(draft.getNextPack(username), getApp().getAssets());
             if (!packView.notHasPack()) {
@@ -123,6 +123,9 @@ public class DraftScreen extends AbstractScreen {
             getApp().getAssets().update();
             loadingTextures = !packView.updateCardImages(getApp().getAssets());
         }
+        if (draft.draftIsOver()) {
+            getApp().changeScreen(new DeckBuilderScreen(getApp()));
+        }
     }
 
     @Override
@@ -130,11 +133,7 @@ public class DraftScreen extends AbstractScreen {
         batch.begin();
         packView.render(batch);
         poolView.render(batch, font);
-        if (draft.draftIsOver()) {
-            font.draw(batch, "draft complete", getWidth() * 0.82f, getHeight() * 0.98f);
-        } else {
-            font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.85f, getHeight() * 0.98f);
-        }
+        font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.85f, getHeight() * 0.98f);
         batch.end();
 
         // don't use shape renderer between batch.begin and batch.end

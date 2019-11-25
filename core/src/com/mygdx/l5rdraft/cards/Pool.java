@@ -1,13 +1,10 @@
-package com.mygdx.l5rdraft.packs;
-
-import com.badlogic.gdx.assets.AssetManager;
-import com.badlogic.gdx.graphics.Texture;
-import com.mygdx.l5rdraft.Assets;
+package com.mygdx.l5rdraft.cards;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Pool {
+
     private List<Card> cards;
     private List<Integer> quantities;
 

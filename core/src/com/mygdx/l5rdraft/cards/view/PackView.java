@@ -1,10 +1,12 @@
-package com.mygdx.l5rdraft.packs;
+package com.mygdx.l5rdraft.cards.view;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.Assets;
+import com.mygdx.l5rdraft.cards.Card;
+import com.mygdx.l5rdraft.cards.Pack;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,7 +68,7 @@ public class PackView {
      *
      * @param screenX the x pos of the click event
      * @param screenY the y pos of the click event
-     * @return true if a card was clicked
+     * @return true if a card was clicked, else false
      */
     public boolean click(int screenX, int screenY) {
         if (notHasPack()) {
@@ -127,7 +129,7 @@ public class PackView {
     }
 
     public void resize(int width, int height) {
-        dimen = new Rectangle(10, 10, width * 0.75f - 20, height - 20);
+        dimen.setSize(width * 0.75f - 20, height - 20);
         cardWidth = (dimen.width - buffer * 7) / 6;
         cardHeight = (dimen.height - buffer * 4) / 3;
     }
