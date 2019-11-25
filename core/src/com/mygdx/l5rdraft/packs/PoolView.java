@@ -48,10 +48,11 @@ public class PoolView {
             camera = 0;
             return;
         }
-        if (amount < 0 && (dimen.y + dimen.height - buffer) - ((textHeight * 2 + buffer) * pool.size()) + camera > dimen.y) {
+        if (amount > 0 && (dimen.y + dimen.height - buffer) - ((textHeight * 2 + buffer) * pool.size()) + camera > dimen.y) {
+            // if the last item is at the bottom don't let them scroll down anymore
             return;
         }
-        camera += amount * -20;
+        camera += amount * 20;
         if (camera < 0) {
             // camera should never be less than 0 bc that's where the top of the list is
             camera = 0;

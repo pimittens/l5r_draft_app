@@ -1,8 +1,8 @@
 # l5r_draft
 drafting app for l5r
 
-current task:
-add rarity symbols
+current thing:
+deck building screen
 
 planned features:
 

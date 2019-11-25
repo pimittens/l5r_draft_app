@@ -112,10 +112,7 @@ public class DraftScreen extends AbstractScreen {
 
     @Override
     public void update(float delta) {
-        // update input processors
-        //playerMovementProcessor.update(delta);
-        // todo: only get a new pack if the textures are loaded
-        // also load the next pack before hand
+        // todo: load the next pack before hand
         if (packView.notHasPack()) {
             packView.setPack(draft.getNextPack(username), getApp().getAssets());
             if (!packView.notHasPack()) {
