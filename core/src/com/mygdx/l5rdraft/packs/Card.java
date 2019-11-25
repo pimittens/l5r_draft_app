@@ -26,10 +26,9 @@ public class Card {
     private RARITY rarity;
     private String id;
 
-    public Card(String name, RARITY rarity, String id) {
+    public Card(String name, RARITY rarity {
         this.name = name;
         this.rarity = rarity;
-        this.id = id;
     }
 
     public String getName() {
@@ -61,7 +60,6 @@ public class Card {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 31 * hash + id.hashCode();
         hash = 31 * hash + name.hashCode();
         return hash;
     }
@@ -95,7 +93,7 @@ public class Card {
         }
 
         public Card build() {
-            return new Card(name, rarity, id);
+            return new Card(name, rarity);
         }
     }
 }
