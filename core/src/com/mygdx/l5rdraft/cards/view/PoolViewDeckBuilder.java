@@ -49,6 +49,13 @@ public class PoolViewDeckBuilder {
         }
     }
 
+    public void addCard(Card c) {
+        int pos = pool.getPos(c);
+        if (pos != -1) {
+            pool.changeQuantityInDeck(pos, -1);
+        }
+    }
+
     public Card getClickedCard() {
         return clickedCard;
     }

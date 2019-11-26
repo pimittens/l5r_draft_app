@@ -69,6 +69,13 @@ public class DeckBuilderScreen extends AbstractScreen {
                     deckView.addCard(poolView.getClickedCard());
                 }
             }
+            if (deckView.getDimen().contains(screenX, screenY)) {
+                // click is inside the deck view, return true if they clicked a card
+                if (deckView.click(screenY)) {
+                    // add the clicked card back to the pool
+                    poolView.addCard(deckView.getClickedCard());
+                }
+            }
         } else if (button == 1) {
             // todo: right click
         }

@@ -46,6 +46,15 @@ public class Pool {
         return pos < cards.size() ? cards.get(pos) : cards.get(0);
     }
 
+    public int getPos(Card c) {
+        for (int i = 0; i < cards.size(); i++) {
+            if (cards.get(i).equals(c)) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public int getQuantity(int pos) {
         return pos < quantities.size() ? quantities.get(pos) : 0;
     }
