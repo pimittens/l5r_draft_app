@@ -39,6 +39,10 @@ public class PoolView {
         pool = p;
     }
 
+    public Pool getPool() {
+        return pool;
+    }
+
     public Rectangle getDimen() {
         return dimen;
     }

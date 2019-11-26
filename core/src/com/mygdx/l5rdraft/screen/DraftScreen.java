@@ -98,6 +98,7 @@ public class DraftScreen extends AbstractScreen {
         batch.dispose();
         shapes.dispose();
         fontGenerator.dispose();
+        font.dispose();
     }
 
     @Override
@@ -115,7 +116,7 @@ public class DraftScreen extends AbstractScreen {
         // todo: load the next pack beforehand
         if (packView.notHasPack()) {
             packView.setPack(draft.getNextPack(username), getApp().getAssets());
-            if (!packView.notHasPack()) {
+            if (!packView.notHasPack()) { // lol
                 loadingTextures = true;
             }
         }
@@ -124,7 +125,7 @@ public class DraftScreen extends AbstractScreen {
             loadingTextures = !packView.updateCardImages(getApp().getAssets());
         }
         if (draft.draftIsOver()) {
-            getApp().changeScreen(new DeckBuilderScreen(getApp()));
+            getApp().changeScreen(new DeckBuilderScreen(getApp(), poolView.getPool()));
         }
     }
 
@@ -143,7 +144,7 @@ public class DraftScreen extends AbstractScreen {
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
         dimen = poolView.getDimen();
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
-        packView.renderShapes(shapes); // debug rectangles
+        //packView.renderShapes(shapes); // debug rectangles
         shapes.end();
     }
 
