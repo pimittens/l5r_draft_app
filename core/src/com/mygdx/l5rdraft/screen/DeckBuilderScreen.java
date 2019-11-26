@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.L5RDraft;
+import com.mygdx.l5rdraft.cards.Pool;
 import com.mygdx.l5rdraft.cards.view.DeckView;
 import com.mygdx.l5rdraft.cards.view.PoolViewDeckBuilder;
 import com.mygdx.l5rdraft.input.DeckBuilderInputProcessor;
@@ -20,13 +21,16 @@ public class DeckBuilderScreen extends AbstractScreen {
     private SpriteBatch batch;
     private ShapeRenderer shapes;
 
-    DeckBuilderScreen(L5RDraft app) {
+    private boolean loadingTextures;
+
+    public DeckBuilderScreen(L5RDraft app, Pool pool) {
         super(app);
+        loadingTextures = true;
         input = new DeckBuilderInputProcessor();
         batch = new SpriteBatch();
         shapes = new ShapeRenderer();
-        poolView = new PoolViewDeckBuilder(new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.75f - 20, Gdx.graphics.getHeight() - 20));
-        deckView = new DeckView(new Rectangle(10, Gdx.graphics.getWidth() * 0.75f + 10, Gdx.graphics.getWidth() * 0.25f - 20, Gdx.graphics.getHeight() - 20));
+        poolView = new PoolViewDeckBuilder(pool, new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.75f - 20, Gdx.graphics.getHeight() - 20), getApp().getAssets());
+        deckView = new DeckView(new Rectangle(Gdx.graphics.getWidth() * 0.75f + 10, 10, Gdx.graphics.getWidth() * 0.25f - 20, Gdx.graphics.getHeight() - 20));
     }
 
     @Override
@@ -48,7 +52,10 @@ public class DeckBuilderScreen extends AbstractScreen {
 
     @Override
     public void update(float delta) {
-
+        if (loadingTextures) {
+            getApp().getAssets().update();
+            loadingTextures = !poolView.updateCardImages(getApp().getAssets());
+        }
     }
 
     @Override
@@ -63,12 +70,16 @@ public class DeckBuilderScreen extends AbstractScreen {
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
         dimen = deckView.getDimen();
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
+        poolView.renderShapes(shapes);
         shapes.end();
     }
 
     @Override
     public void resize(int width, int height) {
+        batch.getProjectionMatrix().setToOrtho2D(0, 0, width, height);
+        shapes.setProjectionMatrix(batch.getProjectionMatrix());
         poolView.resize(width, height);
+        deckView.resize(width, height);
     }
 
     @Override

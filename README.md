@@ -2,8 +2,9 @@
 drafting app for l5r
 
 current thing:
-extra pool tab
-deck building screen
+pool view on deckbuilding screen
+should display above each card the number of copies currently in the deck / the total number of copies
+also need arrows to move between pages and sorting options
 
 planned features:
 

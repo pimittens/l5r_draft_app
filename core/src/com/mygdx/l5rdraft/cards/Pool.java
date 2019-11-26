@@ -6,11 +6,12 @@ import java.util.List;
 public class Pool {
 
     private List<Card> cards;
-    private List<Integer> quantities;
+    private List<Integer> quantities, quantityInDeck;
 
     public Pool() {
         cards = new ArrayList<>();
         quantities = new ArrayList<>();
+        quantityInDeck = new ArrayList<>();
     }
 
     /**
@@ -31,7 +32,14 @@ public class Pool {
         }
         cards.add(c);
         quantities.add(1);
+        quantityInDeck.add(0);
         return true;
+    }
+
+    public void changeQuantityInDeck(int pos, int incr) {
+        if (pos < quantityInDeck.size()) {
+            quantityInDeck.set(pos, quantityInDeck.get(pos) + incr);
+        }
     }
 
     public Card getCard(int pos) {
@@ -40,6 +48,10 @@ public class Pool {
 
     public int getQuantity(int pos) {
         return pos < quantities.size() ? quantities.get(pos) : 0;
+    }
+
+    public int getQuantityInDeck(int pos) {
+        return pos < quantityInDeck.size() ? quantities.get(pos) : 0;
     }
 
     public List<Card> getCards() {

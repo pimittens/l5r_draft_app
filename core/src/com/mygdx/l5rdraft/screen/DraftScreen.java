@@ -115,7 +115,7 @@ public class DraftScreen extends AbstractScreen {
         // todo: load the next pack beforehand
         if (packView.notHasPack()) {
             packView.setPack(draft.getNextPack(username), getApp().getAssets());
-            if (!packView.notHasPack()) {
+            if (!packView.notHasPack()) { // lol
                 loadingTextures = true;
             }
         }
@@ -124,7 +124,7 @@ public class DraftScreen extends AbstractScreen {
             loadingTextures = !packView.updateCardImages(getApp().getAssets());
         }
         if (draft.draftIsOver()) {
-            getApp().changeScreen(new DeckBuilderScreen(getApp()));
+            getApp().changeScreen(new DeckBuilderScreen(getApp(), poolView.getPool()));
         }
     }
 
