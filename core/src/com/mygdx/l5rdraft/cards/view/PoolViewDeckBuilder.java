@@ -29,6 +29,6 @@ public class PoolViewDeckBuilder {
     }
 
     public void resize(int width, int height) {
-        dimen.setSize(width - 20, height - 20);
+        dimen.setSize(width * 0.75f - 20, height - 20);
     }
 }

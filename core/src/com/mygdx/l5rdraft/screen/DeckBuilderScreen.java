@@ -6,12 +6,14 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.L5RDraft;
+import com.mygdx.l5rdraft.cards.view.DeckView;
 import com.mygdx.l5rdraft.cards.view.PoolViewDeckBuilder;
 import com.mygdx.l5rdraft.input.DeckBuilderInputProcessor;
 
 public class DeckBuilderScreen extends AbstractScreen {
 
     private PoolViewDeckBuilder poolView;
+    private DeckView deckView;
 
     private DeckBuilderInputProcessor input;
 
@@ -23,7 +25,8 @@ public class DeckBuilderScreen extends AbstractScreen {
         input = new DeckBuilderInputProcessor();
         batch = new SpriteBatch();
         shapes = new ShapeRenderer();
-        poolView = new PoolViewDeckBuilder(new Rectangle(10, 10, Gdx.graphics.getWidth() - 20, Gdx.graphics.getHeight() - 20));
+        poolView = new PoolViewDeckBuilder(new Rectangle(10, 10, Gdx.graphics.getWidth() * 0.75f - 20, Gdx.graphics.getHeight() - 20));
+        deckView = new DeckView(new Rectangle(10, Gdx.graphics.getWidth() * 0.75f + 10, Gdx.graphics.getWidth() * 0.25f - 20, Gdx.graphics.getHeight() - 20));
     }
 
     @Override
@@ -57,6 +60,8 @@ public class DeckBuilderScreen extends AbstractScreen {
         Rectangle dimen = poolView.getDimen();
         shapes.begin(ShapeRenderer.ShapeType.Line);
         shapes.setColor(Color.RED);
+        shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
+        dimen = deckView.getDimen();
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
         shapes.end();
     }
