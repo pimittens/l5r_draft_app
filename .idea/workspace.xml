@@ -10,20 +10,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Pool.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Pool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/DeckView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/input/DeckBuilderInputProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/input/DeckBuilderInputProcessor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DeckBuilderScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DeckBuilderScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DraftScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DraftScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/Assets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/Pool.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/Pool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/DeckView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/input/DeckBuilderInputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/input/DeckBuilderInputProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DeckBuilderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DeckBuilderScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DraftScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DraftScreen.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574727668332</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="arrows for navigating pool on deckbuilding screen">
+      <created>1574745398093</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1574745398093</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,6 +199,7 @@
     <MESSAGE value="pool now displays card names" />
     <MESSAGE value="stars on rares" />
     <MESSAGE value="deck building screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="deck building screen" />
+    <MESSAGE value="arrows for navigating pool on deckbuilding screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="arrows for navigating pool on deckbuilding screen" />
   </component>
 </project>

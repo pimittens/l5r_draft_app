@@ -1,35 +1,27 @@
 package com.mygdx.l5rdraft.cards.view;
 
 import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
+import com.mygdx.l5rdraft.cards.Card;
 import com.mygdx.l5rdraft.cards.Pool;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DeckView {
-
-    private Pool pool;
-    private List<Texture> cardImages;
-    private Rectangle dimen;
+public class DeckView extends PoolView {
 
     public DeckView(Rectangle dimen) {
-        pool = new Pool();
-        cardImages = new ArrayList<>();
-        this.dimen = dimen;
+        super(dimen);
     }
 
-    public Rectangle getDimen() {
-        return dimen;
+    public void click() {
+        // todo: remove cards on click and add them back to the pool
     }
 
-    public void render(SpriteBatch batch) {
-
-    }
-
-    public void resize(int width, int height) {
-        dimen.setPosition(width * 0.75f + 10, 10);
-        dimen.setSize(width * 0.25f - 20, height - 20);
+    public void addCard(Card c) {
+        getPool().addCard(c);
     }
 }

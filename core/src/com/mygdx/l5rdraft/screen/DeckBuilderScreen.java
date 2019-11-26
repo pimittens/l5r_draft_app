@@ -66,7 +66,7 @@ public class DeckBuilderScreen extends AbstractScreen {
                 // click is inside the pool view, return true if they clicked a card
                 if (poolView.click(screenX, screenY)) {
                     // add the clicked card to the deck
-                    //deckView.addCard(poolView.getClickedCard());
+                    deckView.addCard(poolView.getClickedCard());
                 }
             }
         } else if (button == 1) {
@@ -105,6 +105,7 @@ public class DeckBuilderScreen extends AbstractScreen {
     public void render(float delta) {
         batch.begin();
         poolView.render(batch, font);
+        deckView.render(batch, font);
         batch.end();
 
         Rectangle dimen = poolView.getDimen();
@@ -123,7 +124,7 @@ public class DeckBuilderScreen extends AbstractScreen {
         batch.getProjectionMatrix().setToOrtho2D(0, 0, width, height);
         shapes.setProjectionMatrix(batch.getProjectionMatrix());
         poolView.resize(width, height);
-        deckView.resize(width, height);
+        deckView.resize(width, height, font);
     }
 
     @Override

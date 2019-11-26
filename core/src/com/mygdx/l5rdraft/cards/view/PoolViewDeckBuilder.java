@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.Assets;
 import com.mygdx.l5rdraft.cards.Card;
@@ -20,6 +21,8 @@ public class PoolViewDeckBuilder {
     private Rectangle dimen, arrowOneDimen, arrowTwoDimen;
 
     private Texture star, loadingImage, arrowOne, arrowTwo;
+
+    private Card clickedCard;
 
     private float buffer = 50f, cardWidth, cardHeight;
 
@@ -46,12 +49,16 @@ public class PoolViewDeckBuilder {
         }
     }
 
+    public Card getClickedCard() {
+        return clickedCard;
+    }
+
     /**
      * called when the user clicks the screen within the view
      *
      * @param screenX the x pos of the click event
      * @param screenY the y pos of the click event
-     * @return true if a card was clicked, else false
+     * @return true if a card was clicked and there are more left to put in the deck, else false
      */
     public boolean click(int screenX, int screenY) {
         if (arrowOneDimen.contains(screenX, screenY)) {
@@ -66,20 +73,25 @@ public class PoolViewDeckBuilder {
             }
             return false;
         }
-        /*float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
+        float nextX = dimen.x + buffer, nextY = dimen.y + dimen.height - buffer - cardHeight; // start in top left
         Rectangle nextCardBounds;
-        for (int i = page; i < page + 8; i++) {
+        for (int i = page; i < Math.min(page + 8, pool.size()); i++) {
             nextCardBounds = new Rectangle(nextX, nextY, cardWidth, cardHeight);
             if (nextCardBounds.contains(screenX, screenY)) {
-                clickedCard = pack.popCard(i);
+                if (pool.getQuantityInDeck(i) >= pool.getQuantity(i)) {
+                    // none left bro
+                    return false;
+                }
+                clickedCard = pool.getCard(i);
+                pool.changeQuantityInDeck(i, 1);
                 return true;
             }
             nextX += cardWidth + buffer;
-            if (i % 6 == 5) {
+            if (i % 4 == 3) {
                 nextX = dimen.x + buffer;
-                nextY += cardHeight + buffer;
+                nextY -= cardHeight + buffer;
             }
-        }*/
+        }
         return false;
     }
 
@@ -88,11 +100,8 @@ public class PoolViewDeckBuilder {
     }
 
     public void render(SpriteBatch batch, BitmapFont font) {
-        float nextX = dimen.x + buffer, nextY = dimen.y + buffer;
-        for (int i = page; i < pool.size(); i++) {
-            if (!dimen.contains(new Rectangle(nextX, nextY, cardWidth, cardHeight))) {
-                break;
-            }
+        float nextX = dimen.x + buffer, nextY = dimen.y + dimen.height - buffer - cardHeight; // start in top left
+        for (int i = page; i < Math.min(page + 8, pool.size()); i++) {
             if (cardImages.get(i) == null) {
                 batch.draw(loadingImage, nextX, nextY, cardWidth, cardHeight);
             } else {
@@ -105,7 +114,7 @@ public class PoolViewDeckBuilder {
             nextX += cardWidth + buffer;
             if (i % 4 == 3) {
                 nextX = dimen.x + buffer;
-                nextY += cardHeight + buffer;
+                nextY -= cardHeight + buffer;
             }
         }
         if (page > 0) {
