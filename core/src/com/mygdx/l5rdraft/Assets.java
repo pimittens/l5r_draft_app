@@ -9,6 +9,8 @@ public class Assets {
     private static final String CARD_PATH = "cards/";
     private static final String STAR = "star.png";
     private static final String LOADING_IMAGE = "loading_image.png";
+    private static final String ARROW_ONE = "arrow_one.png";
+    private static final String ARROW_TWO = "arrow_two.png"; // this is literally just bc i got lazy
 
     private AssetManager manager;
     private TextureLoader.TextureParameter textureParameter;
@@ -26,6 +28,8 @@ public class Assets {
     void load() {
         manager.load(STAR, Texture.class, textureParameter);
         manager.load(LOADING_IMAGE, Texture.class, textureParameter);
+        manager.load(ARROW_ONE, Texture.class, textureParameter);
+        manager.load(ARROW_TWO, Texture.class, textureParameter);
     }
 
     public boolean update() {
@@ -60,6 +64,18 @@ public class Assets {
 
     public Texture getLoadingImage() {
         Texture t = manager.get(LOADING_IMAGE, Texture.class);
+        t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
+        return t;
+    }
+
+    public Texture getArrowOne() {
+        Texture t = manager.get(ARROW_ONE, Texture.class);
+        t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
+        return t;
+    }
+
+    public Texture getArrowTwo() {
+        Texture t = manager.get(ARROW_TWO, Texture.class);
         t.setFilter(Texture.TextureFilter.MipMap, Texture.TextureFilter.Nearest);
         return t;
     }

@@ -51,7 +51,7 @@ public class Pool {
     }
 
     public int getQuantityInDeck(int pos) {
-        return pos < quantityInDeck.size() ? quantities.get(pos) : 0;
+        return pos < quantityInDeck.size() ? quantityInDeck.get(pos) : 0;
     }
 
     public List<Card> getCards() {

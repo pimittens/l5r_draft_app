@@ -1,8 +1,15 @@
 package com.mygdx.l5rdraft.input;
 
 import com.badlogic.gdx.InputAdapter;
+import com.mygdx.l5rdraft.screen.DeckBuilderScreen;
 
 public class DeckBuilderInputProcessor extends InputAdapter {
+
+    private DeckBuilderScreen screen;
+
+    public DeckBuilderInputProcessor(DeckBuilderScreen screen) {
+        this.screen = screen;
+    }
 
     @Override
     public boolean keyDown(int keycode) {
@@ -21,7 +28,7 @@ public class DeckBuilderInputProcessor extends InputAdapter {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        //screen.click(screenX, screen.getHeight() - screenY, button);
+        screen.click(screenX, screen.getHeight() - screenY, button);
         return true;
     }
 

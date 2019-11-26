@@ -98,6 +98,7 @@ public class DraftScreen extends AbstractScreen {
         batch.dispose();
         shapes.dispose();
         fontGenerator.dispose();
+        font.dispose();
     }
 
     @Override
@@ -143,7 +144,7 @@ public class DraftScreen extends AbstractScreen {
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
         dimen = poolView.getDimen();
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
-        packView.renderShapes(shapes); // debug rectangles
+        //packView.renderShapes(shapes); // debug rectangles
         shapes.end();
     }
 
