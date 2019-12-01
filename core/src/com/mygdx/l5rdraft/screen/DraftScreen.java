@@ -54,6 +54,7 @@ public class DraftScreen extends AbstractScreen {
     public int getHeight() {
         return height;
     }
+
     private int getWidth() {
         return width;
     }
@@ -119,6 +120,8 @@ public class DraftScreen extends AbstractScreen {
             if (!packView.notHasPack()) { // lol
                 loadingTextures = true;
             }
+        } else {
+            click(30, 30, 0); //temporary for testing, automatically pick cards to get to deck builder screen
         }
         if (loadingTextures) {
             getApp().getAssets().update();

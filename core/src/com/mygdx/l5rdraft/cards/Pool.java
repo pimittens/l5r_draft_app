@@ -70,4 +70,14 @@ public class Pool {
     public int size() {
         return cards.size();
     }
+
+    public int sizeNoZeroes() {
+        int size = 0;
+        for (int i : quantityInDeck) {
+            if (i > 0) {
+                size += 1;
+            }
+        }
+        return size;
+    }
 }
