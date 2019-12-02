@@ -8,10 +8,18 @@ import java.util.List;
 public class Card {
 
     public enum RARITY {
-        SUPER_COMMON,
-        COMMON,
-        PROVINCE,
-        RARE
+        SUPER_COMMON(6),
+        COMMON(3),
+        PROVINCE(1),
+        RARE(0);
+
+        int cardCount;
+        RARITY(int count) {
+            cardCount = count;
+        }
+        int getCardCount() {
+            return cardCount;
+        }
     }
 
     private String name;
@@ -30,14 +38,14 @@ public class Card {
         return rarity;
     }
 
-    public static RARITY getRarityFromList(String cardName, List<Card> cardList) {
+    /*public static RARITY getRarityFromList(String cardName, List<Card> cardList) {
         for (Card c : cardList) {
             if (c.getName().equals(cardName)) {
                 return c.getRarity();
             }
         }
         return RARITY.COMMON;
-    }
+    }*/
 
     @Override
     public boolean equals(Object obj) {
