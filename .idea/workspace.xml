@@ -10,18 +10,39 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/L5RDraft.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/L5RDraft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Card$RARITY.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Card$RARITY.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Card.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Card.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Pack.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Pack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/PackFactory$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/PackFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/PackFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/PackFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Pool.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/Pool.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/DeckView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/DeckView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PackView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PackView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolView.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolView.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/draft/Draft.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/draft/Draft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/draft/Drafter.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/draft/Drafter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/input/DeckBuilderInputProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/input/DeckBuilderInputProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/input/DraftInputProcessor.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/input/DraftInputProcessor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/AbstractScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/AbstractScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DeckBuilderScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DeckBuilderScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DraftScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/DraftScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/LoadingScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/LoadingScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/TestScreen$InputProcessorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/TestScreen$InputProcessorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/TestScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/mygdx/l5rdraft/screen/TestScreen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/core/build/libs/core-1.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/DeckView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/DeckView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/PoolViewDeckBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/PoolView.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/cards/view/PoolView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/input/DraftInputProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/input/DraftInputProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DeckBuilderScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DeckBuilderScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DraftScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/com/mygdx/l5rdraft/screen/DraftScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop/build/classes/java/main/com/mygdx/l5rdraft/desktop/DesktopLauncher.class" beforeDir="false" afterPath="$PROJECT_DIR$/desktop/build/classes/java/main/com/mygdx/l5rdraft/desktop/DesktopLauncher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,31 +67,27 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/assets" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\libgdx\projects\l5r_draft_app\core\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\libgdx\github\l5r_draft_app\core\assets" />
       <recent name="C:\libgdx\projects\l5r_draft_app\core\assets" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.DesktopLauncher">
     <configuration name="DesktopLauncher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -114,6 +131,18 @@
         <item itemvalue="Gradle.l5r_draft" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -201,5 +230,27 @@
     <MESSAGE value="deck building screen" />
     <MESSAGE value="arrows for navigating pool on deckbuilding screen" />
     <option name="LAST_COMMIT_MESSAGE" value="arrows for navigating pool on deckbuilding screen" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom" timestamp="1575258483700">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1575258483700" />
+    <state width="1877" height="285" key="GridCell.Tab.0.center" timestamp="1575258483700">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1575258483700" />
+    <state width="1877" height="285" key="GridCell.Tab.0.left" timestamp="1575258483700">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1575258483700" />
+    <state width="1877" height="285" key="GridCell.Tab.0.right" timestamp="1575258483700">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="285" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1575258483700" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1575258257842">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1050/1920.0.1920.1050@0.0.1920.1050" timestamp="1575258257842" />
   </component>
 </project>

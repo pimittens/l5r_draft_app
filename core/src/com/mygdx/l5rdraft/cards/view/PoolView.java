@@ -5,6 +5,8 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Rectangle;
+import com.mygdx.l5rdraft.Assets;
+import com.mygdx.l5rdraft.cards.Card;
 import com.mygdx.l5rdraft.cards.Pool;
 
 import java.util.ArrayList;
@@ -35,12 +37,17 @@ public class PoolView {
         textHeight = 0;
     }
 
-    public void updatePool(Pool p) {
+    public void updatePool(Pool p, Assets assets) {
         pool = p;
+        generateCardImages(assets);
     }
 
     public Pool getPool() {
         return pool;
+    }
+
+    public Texture getCardImage(int pos) {
+        return cardImages.get(pos);
     }
 
     public Rectangle getDimen() {
@@ -64,6 +71,24 @@ public class PoolView {
         }
     }
 
+    /**
+     * called when the user moves the mouse within the view
+     * checks if the mouse is over a list item
+     *
+     * @param screenY the y pos
+     * @return the index of the hovered item, -1 if no item is hovered
+     */
+    public int mouseMoved(int screenY) {
+        float nextY = dimen.y + dimen.height - buffer + camera;
+        for (int i = 0; i < pool.size(); i++) {
+            if (screenY > nextY - textHeight && screenY < nextY) {
+                return i;
+            }
+            nextY -= textHeight * 2 + buffer;
+        }
+        return -1;
+    }
+
     public void render(SpriteBatch batch, BitmapFont font) {
         if (pool == null) {
             return;
@@ -84,5 +109,26 @@ public class PoolView {
         dimen.setSize(width * 0.25f - 10, height * 0.95f - 20);
         layout.setText(font, "TEST");
         textHeight = layout.height;
+    }
+
+    private void generateCardImages(Assets assets) {
+        cardImages = new ArrayList<>();
+        for (Card c : pool.getCards()) {
+            cardImages.add(assets.get(c.getName()));
+        }
+    }
+
+    public boolean updateCardImages(Assets assets) {
+        boolean done = true;
+        for (int i = 0; i < cardImages.size(); i++) {
+            if (cardImages.get(i) == null) {
+                if (assets.isLoaded(pool.getCard(i).getName())) {
+                    cardImages.set(i, assets.get(pool.getCard(i).getName()));
+                } else {
+                    done = false;
+                }
+            }
+        }
+        return done;
     }
 }

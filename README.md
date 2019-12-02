@@ -2,9 +2,11 @@
 drafting app for l5r
 
 current thing:
-pool view on deckbuilding screen
-should display above each card the number of copies currently in the deck / the total number of copies
-also need arrows to move between pages and sorting options
+scroll bar
+show cards when hovering on deck/pool view
+sorting options
+jigoku export
+width/height ratio: 0.7
 
 planned features:
 

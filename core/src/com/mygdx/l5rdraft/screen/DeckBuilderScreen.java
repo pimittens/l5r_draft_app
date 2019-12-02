@@ -27,6 +27,9 @@ public class DeckBuilderScreen extends AbstractScreen {
     private DeckBuilderInputProcessor input;
 
     private int height;
+    private int mouseX, mouseY;
+    private int hoveredCardIndex;
+    private float cardHeight;
 
     private SpriteBatch batch;
     private ShapeRenderer shapes;
@@ -35,6 +38,10 @@ public class DeckBuilderScreen extends AbstractScreen {
 
     public DeckBuilderScreen(L5RDraft app, Pool pool) {
         super(app);
+        mouseX = -1;
+        mouseY = -1;
+        cardHeight = 0;
+        hoveredCardIndex = -1;
         loadingTextures = true;
         height = Gdx.graphics.getHeight();
         fontGenerator = new FreeTypeFontGenerator(Gdx.files.internal("Helvetica-Normal.ttf"));
@@ -66,11 +73,41 @@ public class DeckBuilderScreen extends AbstractScreen {
                 // click is inside the pool view, return true if they clicked a card
                 if (poolView.click(screenX, screenY)) {
                     // add the clicked card to the deck
-                    deckView.addCard(poolView.getClickedCard());
+                    deckView.addCard(poolView.getClickedCard(), getApp().getAssets());
+                }
+            }
+            if (deckView.getDimen().contains(screenX, screenY)) {
+                // click is inside the deck view, return true if they clicked a card
+                if (deckView.click(screenY)) {
+                    // add the clicked card back to the pool
+                    poolView.addCard(deckView.getClickedCard());
                 }
             }
         } else if (button == 1) {
             // todo: right click
+        }
+    }
+
+    public void scroll(int amount) {
+        if (deckView.getDimen().contains(mouseX, mouseY)) {
+            deckView.scroll(amount);
+            hoveredCardIndex = deckView.mouseMoved(mouseY);
+        }
+    }
+
+    /**
+     * called when the mouse is moved. displays a card image if the mouse is over a deck item
+     *
+     * @param mouseX the x pos
+     * @param mouseY the y pos
+     */
+    public void mouseMoved(int mouseX, int mouseY) {
+        this.mouseX = mouseX;
+        this.mouseY = mouseY;
+        if (deckView.getDimen().contains(mouseX, mouseY)) {
+            hoveredCardIndex = deckView.mouseMoved(mouseY);
+        } else {
+            hoveredCardIndex = -1;
         }
     }
 
@@ -97,17 +134,12 @@ public class DeckBuilderScreen extends AbstractScreen {
     public void update(float delta) {
         if (loadingTextures) {
             getApp().getAssets().update();
-            loadingTextures = !poolView.updateCardImages(getApp().getAssets());
+            loadingTextures = !(poolView.updateCardImages(getApp().getAssets()) && deckView.updateCardImages(getApp().getAssets()));
         }
     }
 
     @Override
     public void render(float delta) {
-        batch.begin();
-        poolView.render(batch, font);
-        deckView.render(batch, font);
-        batch.end();
-
         Rectangle dimen = poolView.getDimen();
         shapes.begin(ShapeRenderer.ShapeType.Line);
         shapes.setColor(Color.RED);
@@ -115,7 +147,16 @@ public class DeckBuilderScreen extends AbstractScreen {
         dimen = deckView.getDimen();
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
         //poolView.renderShapes(shapes);
+        deckView.renderShapes(shapes);
         shapes.end();
+
+        batch.begin();
+        poolView.render(batch, font);
+        deckView.render(batch, font);
+        if (hoveredCardIndex != -1) {
+            batch.draw(deckView.getCardImage(hoveredCardIndex), mouseX - cardHeight * 0.7f, mouseY - cardHeight, cardHeight * 0.7f, cardHeight);
+        }
+        batch.end();
     }
 
     @Override
@@ -125,6 +166,7 @@ public class DeckBuilderScreen extends AbstractScreen {
         shapes.setProjectionMatrix(batch.getProjectionMatrix());
         poolView.resize(width, height);
         deckView.resize(width, height, font);
+        cardHeight = height * 0.5f;
     }
 
     @Override

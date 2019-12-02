@@ -45,12 +45,14 @@ public class DeckBuilderInputProcessor extends InputAdapter {
 
     @Override
     public boolean mouseMoved(int screenX, int screenY) {
+        screen.mouseMoved(screenX, screen.getHeight() - screenY);
         return super.mouseMoved(screenX, screenY);
     }
 
     @Override
     public boolean scrolled(int amount) {
         // down is 1, up is -1
+        screen.scroll(amount);
         return super.scrolled(amount);
     }
 }
