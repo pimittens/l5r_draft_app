@@ -6,12 +6,9 @@ import com.mygdx.l5rdraft.screen.DraftScreen;
 public class DraftInputProcessor extends InputAdapter {
 
     private DraftScreen screen;
-    private int mouseX, mouseY;
 
     public DraftInputProcessor(DraftScreen screen) {
         this.screen = screen;
-        mouseX = -1;
-        mouseY = -1;
     }
 
     @Override
@@ -48,15 +45,14 @@ public class DraftInputProcessor extends InputAdapter {
 
     @Override
     public boolean mouseMoved(int screenX, int screenY) {
-        mouseX = screenX;
-        mouseY = screen.getHeight() - screenY;
+        screen.mouseMoved(screenX, screen.getHeight() - screenY);
         return super.mouseMoved(screenX, screenY);
     }
 
     @Override
     public boolean scrolled(int amount) {
         // down is 1, up is -1
-        screen.scroll(mouseX, mouseY, amount);
+        screen.scroll(amount);
         return super.scrolled(amount);
     }
 }

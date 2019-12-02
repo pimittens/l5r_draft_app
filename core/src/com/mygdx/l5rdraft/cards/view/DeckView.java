@@ -9,7 +9,6 @@ import com.badlogic.gdx.math.Rectangle;
 import com.mygdx.l5rdraft.Assets;
 import com.mygdx.l5rdraft.cards.Card;
 import com.mygdx.l5rdraft.cards.Pool;
-import javafx.scene.Parent;
 
 import java.util.ArrayList;
 import java.util.List;

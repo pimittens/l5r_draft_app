@@ -24,6 +24,9 @@ public class DraftScreen extends AbstractScreen {
     private BitmapFont font;
 
     private int height, width;
+    private int mouseX, mouseY;
+    private int hoveredCardIndex;
+    private float cardHeight;
 
     private PackView packView;
     private PoolView poolView;
@@ -36,6 +39,10 @@ public class DraftScreen extends AbstractScreen {
     public DraftScreen(L5RDraft app) {
         super(app);
         username = "user";
+        mouseX = -1;
+        mouseY = -1;
+        cardHeight = 0;
+        hoveredCardIndex = -1;
         draft = getApp().getDraft();
         height = Gdx.graphics.getHeight();
         width = Gdx.graphics.getWidth();
@@ -79,7 +86,7 @@ public class DraftScreen extends AbstractScreen {
                     packView.clearPack();
                     draft.pushPack(p, c, username);
                     draft.update();
-                    poolView.updatePool(draft.getPool(username));
+                    poolView.updatePool(draft.getPool(username), getApp().getAssets());
                 }
             }
         } else if (button == 1) {
@@ -87,9 +94,26 @@ public class DraftScreen extends AbstractScreen {
         }
     }
 
-    public void scroll(int mouseX, int mouseY, int amount) {
+    public void scroll(int amount) {
         if (poolView.getDimen().contains(mouseX, mouseY)) {
             poolView.scroll(amount);
+            hoveredCardIndex = poolView.mouseMoved(mouseY);
+        }
+    }
+
+    /**
+     * called when the mouse is moved. displays a card image if the mouse is over a deck item
+     *
+     * @param mouseX the x pos
+     * @param mouseY the y pos
+     */
+    public void mouseMoved(int mouseX, int mouseY) {
+        this.mouseX = mouseX;
+        this.mouseY = mouseY;
+        if (poolView.getDimen().contains(mouseX, mouseY)) {
+            hoveredCardIndex = poolView.mouseMoved(mouseY);
+        } else {
+            hoveredCardIndex = -1;
         }
     }
 
@@ -121,11 +145,11 @@ public class DraftScreen extends AbstractScreen {
                 loadingTextures = true;
             }
         } else {
-            click(30, 30, 0); //temporary for testing, automatically pick cards to get to deck builder screen
+            //click(30, 30, 0); //temporary for testing, automatically pick cards to get to deck builder screen
         }
         if (loadingTextures) {
             getApp().getAssets().update();
-            loadingTextures = !packView.updateCardImages(getApp().getAssets());
+            loadingTextures = !(packView.updateCardImages(getApp().getAssets()) && poolView.updateCardImages(getApp().getAssets()));
         }
         if (draft.draftIsOver()) {
             getApp().changeScreen(new DeckBuilderScreen(getApp(), poolView.getPool()));
@@ -134,12 +158,6 @@ public class DraftScreen extends AbstractScreen {
 
     @Override
     public void render(float delta) {
-        batch.begin();
-        packView.render(batch);
-        poolView.render(batch, font);
-        font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.85f, getHeight() * 0.98f);
-        batch.end();
-
         // don't use shape renderer between batch.begin and batch.end
         Rectangle dimen = packView.getDimen();
         shapes.begin(ShapeRenderer.ShapeType.Line);
@@ -149,6 +167,15 @@ public class DraftScreen extends AbstractScreen {
         shapes.rect(dimen.x, dimen.y, dimen.width, dimen.height);
         //packView.renderShapes(shapes); // debug rectangles
         shapes.end();
+
+        batch.begin();
+        packView.render(batch);
+        poolView.render(batch, font);
+        font.draw(batch, String.format("pack %s/5", draft.getRoundNumber()), getWidth() * 0.85f, getHeight() * 0.98f);
+        if (hoveredCardIndex != -1) {
+            batch.draw(poolView.getCardImage(hoveredCardIndex), mouseX - cardHeight * 0.7f, mouseY - cardHeight, cardHeight * 0.7f, cardHeight);
+        }
+        batch.end();
     }
 
     @Override
@@ -159,6 +186,7 @@ public class DraftScreen extends AbstractScreen {
         shapes.setProjectionMatrix(batch.getProjectionMatrix());
         packView.resize(width, height);
         poolView.resize(width, height, font);
+        cardHeight = height * 0.5f;
         // todo: change font size here
     }
 

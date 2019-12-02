@@ -91,6 +91,7 @@ public class DeckBuilderScreen extends AbstractScreen {
     public void scroll(int amount) {
         if (deckView.getDimen().contains(mouseX, mouseY)) {
             deckView.scroll(amount);
+            hoveredCardIndex = deckView.mouseMoved(mouseY);
         }
     }
 
