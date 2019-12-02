@@ -18,26 +18,11 @@ public class PackFactory {
     public static List<Pack> createPacks(List<Card> cards) {
         List<Pack> ret = new ArrayList<>();
         List<Card> commons = new ArrayList<>(), rares = new ArrayList<>();
-        int count;
         for (Card c : cards) {
             if (c.getRarity() == Card.RARITY.RARE) {
                 rares.add(c.copy());
             } else {
-                switch (c.getRarity()) {
-                    case SUPER_COMMON:
-                        count = 6;
-                        break;
-                    case COMMON:
-                        count = 3;
-                        break;
-                    case PROVINCE:
-                        count = 1;
-                        break;
-                    default:
-                        count = 0;
-                        break;
-                }
-                for (int i = 0; i < count; i++) {
+                for (int i = 0; i < c.getRarity().getCardCount(); i++) {
                     commons.add(c.copy());
                 }
             }
