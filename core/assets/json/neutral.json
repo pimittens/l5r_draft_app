@@ -1,292 +1,1554 @@
 {
 	"cards": [
 		{
-			"name": "ancestral_lands",
-			"rarity" : "province"
-		},
-		{
-			"name": "before_the_throne",
-			"rarity" : "province"
-		},
-		{
-			"name": "entrenched_position",
-			"rarity" : "province"
-		},
-		{
-			"name": "fertile_fields",
-			"rarity" : "province"
-		},
-		{
-			"name": "gateway_to_meido",
-			"rarity" : "province"
-		},
-		{
-			"name": "into_the_forbidden_city",
-			"rarity" : "province"
-		},
-		{
-			"name": "manicured_garden",
-			"rarity" : "province"
-		},
-		{
-			"name": "meditations_on_the_tao",
-			"rarity" : "province"
-		},
-		{
-			"name": "midnight_revels",
-			"rarity" : "province"
-		},
-		{
-			"name": "night_raid",
-			"rarity" : "province"
-		},
-		{
-			"name": "pilgrimage",
-			"rarity" : "province"
-		},
-		{
-			"name": "rally_to_the_cause",
-			"rarity" : "province"
-		},
-		{
-			"name": "shameful_display",
-			"rarity" : "province"
-		},
-		{
-			"name": "smuggler's_cove",
-			"rarity" : "province"
-		},
-		{
-			"name": "vassal_fields",
-			"rarity" : "province"
-		},
-		{
-			"name": "caravan_guard",
-			"rarity" : "common"
-		},
-		{
-			"name": "otomo_courtier",
-			"rarity" : "super_common"
-		},
-		{
-			"name": "seppun_guardsman",
-			"rarity" : "super_common"
-		},
-		{
-			"name": "armament_artisan",
-			"rarity" : "common"
-		},
-		{
-			"name": "aspiring_challenger",
-			"rarity" : "common"
-		},
-		{
-			"name": "imperial_librarian",
-			"rarity" : "common"
-		},
-		{
-			"name": "mantis_tenkinja",
-			"rarity" : "common"
-		},
-		{
-			"name": "marauding_oni",
-			"rarity" : "common"
-		},
-		{
-			"name": "miya_mystic",
-			"rarity" : "super_common"
-		},
-		{
-			"name": "moto_eviscerator",
-			"rarity" : "common"
-		},
-		{
-			"name": "seppun_hidden_guard",
-			"rarity" : "common"
-		},
-		{
-			"name": "seppun_truthseeker",
-			"rarity" : "common"
-		},
-		{
-			"name": "humble_magistrate",
-			"rarity" : "common"
-		},
-		{
-			"name": "ivory_kingdoms_unicorn",
-			"rarity" : "common"
-		},
-		{
-			"name": "righteous_magistrate",
-			"rarity" : "common"
-		},
-		{
-			"name": "yoritomo",
-			"rarity" : "common"
-		},
-		{
-			"name": "favorable_ground",
-			"rarity" : "super_common"
-		},
-		{
-			"name": "imperial_storehouse",
-			"rarity" : "common"
-		},
-		{
-			"name": "kansen_haunt",
-			"rarity" : "common"
-		},
-		{
-			"name": "proving_ground",
-			"rarity" : "common"
-		},
-		{
-			"name": "a_perfect_cut",
-			"rarity" : "common"
-		},
-		{
-			"name": "assassination",
-			"rarity" : "common"
-		},
-		{
-			"name": "banzai",
-			"rarity" : "common"
-		},
-		{
-			"name": "censure",
-			"rarity" : "common"
-		},
-		{
-			"name": "compass",
-			"rarity" : "common"
-		},
-		{
-			"name": "court_games",
-			"rarity" : "common"
-		},
-		{
-			"name": "defend_your_honor",
-			"rarity" : "common"
-		},
-		{
-			"name": "fine_katana",
-			"rarity" : "common"
-		},
-		{
-			"name": "for_shame",
-			"rarity" : "common"
-		},
-		{
-			"name": "offer_testimony",
-			"rarity" : "common"
-		},
-		{
-			"name": "ornate_fan",
-			"rarity" : "common"
-		},
-		{
-			"name": "sabotage",
-			"rarity" : "common"
-		},
-		{
-			"name": "spies_at_court",
-			"rarity" : "common"
-		},
-		{
-			"name": "cloud_the_mind",
-			"rarity" : "common"
-		},
-		{
-			"name": "slovenly_scavenger",
-			"rarity" : "common"
-		},
-		{
-			"name": "finger_of_jade",
-			"rarity" : "common"
-		},
-		{
-			"name": "kujira's_hireling",
-			"rarity" : "common"
-		},
-		{
-			"name": "outwit",
-			"rarity" : "common"
-		},
-		{
-			"name": "peasant's_advice",
-			"rarity" : "common"
-		},
-		{
-			"name": "rout",
-			"rarity" : "common"
-		},
-		{
-			"name": "unveiled_destiny",
-			"rarity" : "common"
-		},
-		{
-			"name": "goblin_sneak",
-			"rarity" : "common"
-		},
-		{
-			"name": "guardian_kami",
-			"rarity" : "common"
-		},
-		{
-			"name": "kami_unleashed",
-			"rarity" : "common"
-		},
-		{
-			"name": "way_of_the_chrysanthemum",
-			"rarity" : "common"
-		},
-		{
-			"name": "hantei_daisetsu",
-			"rarity" : "rare"
-		},
-		{
-			"name": "hantei_sotorii",
-			"rarity" : "rare"
-		},
-		{
-			"name": "kudaka",
-			"rarity" : "rare"
-		},
-		{
-			"name": "akodo_toturi_exp",
-			"rarity" : "rare"
-		},
-		{
-			"name": "hantei_xxxviii",
-			"rarity" : "rare"
-		},
-		{
-			"name": "the_imperial_palace",
-			"rarity" : "rare"
-		},
-		{
-			"name": "daimyo's_gunbai",
-			"rarity" : "rare"
-		},
-		{
-			"name": "policy_debate",
-			"rarity" : "rare"
-		},
-		{
-			"name": "charge",
-			"rarity" : "rare"
-		},
-		{
-			"name": "those_who_serve",
-			"rarity" : "rare"
-		},
-		{
-			"name": "warm_welcome",
-			"rarity" : "rare"
-		},
+			"pool_name": "closed_shell_castle",
+			"card_name": "Closed Shell Castle",
+			"set": "Draft Set",
+			"type": "stronghold"
+		},
+		{
+			"pool_name": "keeper_of_air",
+			"card_name": "Keeper of Air",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "keeper_of_earth",
+			"card_name": "Keeper of Earth",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "keeper_of_fire",
+			"card_name": "Keeper of Fire",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "keeper_of_void",
+			"card_name": "Keeper of Void",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "keeper_of_water",
+			"card_name": "Keeper of Water",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "seeker_of_air",
+			"card_name": "Seeker of Air",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "seeker",
+					"trait": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "seeker_of_earth",
+			"card_name": "Seeker of Earth",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "seeker",
+					"trait": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "seeker_of_fire",
+			"card_name": "Seeker of Fire",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "seeker",
+					"trait": "fire"
+				}
+			]
+		},
 		{
-			"name": "perfect_land_ethos",
-			"rarity" : "rare"
+			"pool_name": "seeker_of_void",
+			"card_name": "Keeper of Void",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "seeker",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "seeker_of_water",
+			"card_name": "Seeker of Water",
+			"set": "Core Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "seeker",
+					"trait": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_crab",
+			"card_name": "Support of the Crab",
+			"set": "Defenders of Rokugan",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "crab"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_crane",
+			"card_name": "Support of the Crane",
+			"set": "Masters of the Court",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "crane"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_dragon",
+			"card_name": "Support of the Dragon",
+			"set": "Seekers of Wisdom",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "dragon"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_lion",
+			"card_name": "Support of the Lion",
+			"set": "The Emperor's Legion",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "lion"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_phoenix",
+			"card_name": "Support of the Phoenix",
+			"set": "Disciples of the Void",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "phoenix"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_scorpion",
+			"card_name": "Support of the Scorpion",
+			"set": "Underhand of the Emperor",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "scorpion"
+				}
+			]
+		},
+		{
+			"pool_name": "support_of_the_unicorn",
+			"card_name": "Support of the Unicorn",
+			"set": "Warriors of the Wind",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "unicorn"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_crab",
+			"card_name": "Allied with the Crab",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_crane",
+			"card_name": "Allied with the Crane",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_dragon",
+			"card_name": "Allied with the Dragon",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_lion",
+			"card_name": "Allied with the Lion",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_phoenix",
+			"card_name": "Allied with the Phoenix",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_scorpion",
+			"card_name": "Allied with the Scorpion",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allied_with_the_unicorn",
+			"card_name": "Allied with the Unicorn",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "keeper",
+					"trait": "seeker",
+					"trait": "air",
+					"trait": "earth",
+					"trait": "fire",
+					"trait": "water",
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "allies_of_convenience",
+			"card_name": "Allies of Convenience",
+			"set": "Draft Set",
+			"type": "role",
+			"traits": [
+				{
+					"trait": "ronin"
+				}
+			]
+		},
+		{
+			"pool_name": "abandoning_honor",
+			"card_name": "Abandoning Honor",
+			"set": "The Fires Within",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "along_the_river_of_gold",
+			"card_name": "Along the River of Gold",
+			"set": "Meditations on the Ephemeral",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "water"
+				}
+			],
+			"traits": [
+				{
+					"trait": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "ancestral_lands",
+			"card_name": "Ancestral Lands",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "appealing_to_the_fortunes",
+			"card_name": "Appealing to the Fortunes",
+			"set": "All and Nothing",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "before_the_throne",
+			"card_name": "Before the Throne",
+			"set": "The Chrysanthemum Throne",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "blood_of_onnotangu",
+			"card_name": "Blood of Onnotangu",
+			"set": "Tears of Amaterasu",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			],
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "city_of_the_rich_frog",
+			"card_name": "City of the Rich Frog",
+			"set": "Rokugan at War",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "earth",
+					"element": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "demonstrating_excellence",
+			"card_name": "Demonstrating Excellence",
+			"set": "Breath of the Kami",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "elemental_fury",
+			"card_name": "Elemental Fury",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "emperor's_summons",
+			"card_name": "Emperor's Summons",
+			"set": "The Children of Heaven",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "air"
+				}
+			],
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "entrenched_position",
+			"card_name": "Entrenched Position",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "feast_or_famine",
+			"card_name": "Feast or Famine",
+			"set": "Into the Forbidden City",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			],
+			"traits": [
+				{
+					"trait": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "fertile_fields",
+			"card_name": "Fertile Fields",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "festival_of_the_departed",
+			"card_name": "Festival of the Departed",
+			"set": "Bonds of Blood",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			],
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "frostbitten_crossing",
+			"card_name": "Frostbitten Crossing",
+			"set": "For Honor and Glory",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "air"
+				}
+			],
+			"traits": [
+				{
+					"trait": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "gateway_to_meido",
+			"card_name": "Gateway to Meido",
+			"set": "For the Empire",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "guardians_of_the_seikitsu",
+			"card_name": "Guardians of the Seikitsu",
+			"set": "The Chrysanthemum Throne",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			],
+			"traits": [
+				{
+					"trait": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "illustrious_forge",
+			"card_name": "Illustrious Forge",
+			"set": "Children of the Empire",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "into_the_forbidden_city",
+			"card_name": "Into the Forbidden City",
+			"set": "Justice for Satsume",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			],
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "kiku_matsuri",
+			"card_name": "Kiku Matsuri",
+			"set": "Children of the Empire",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "manicured_garden",
+			"card_name": "Manicured Garden",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "massing_at_twilight",
+			"card_name": "Massing at Twilight",
+			"set": "Fate Has No Secrets",
+			"type": "province",
+			"province_strength": 8,
+			"elements": [
+				{
+					"element": "void"
+				}
+			],
+			"traits": [
+				{
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "meditations_on_the_tao",
+			"card_name": "Meditations on the Tao",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "midnight_revels",
+			"card_name": "Midnight Revels",
+			"set": "Children of the Empire",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "night_raid",
+			"card_name": "Night Raid",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "pilgrimage",
+			"card_name": "Pilgrimage",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 5,
+			"elements": [
+				{
+					"element": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "public_forum",
+			"card_name": "Public Forum",
+			"set": "Into the Forbidden City",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "rally_to_the_cause",
+			"card_name": "Rally to the Cause",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "riot_in_the_streets",
+			"card_name": "Riot in the Streets",
+			"set": "For Honor and Glory",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "seeking_the_truth",
+			"card_name": "Seeking the Truth",
+			"set": "The Ebb and Flow",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "shameful_display",
+			"card_name": "Shameful Display",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "smuggler's_cove",
+			"card_name": "Smuggler's Cove",
+			"set": "A Champion's Foresight",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "water"
+				}
+			],
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "tears_of_amaterasu",
+			"card_name": "Tears of Amaterasu",
+			"set": "Tears of Amaterasu",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "void"
+				}
+			],
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "temple_of_the_dragons",
+			"card_name": "Temple of the Dragons",
+			"set": "Children of the Empire",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "upholding_authority",
+			"card_name": "Upholding Authority",
+			"set": "Tainted Lands",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "vassal_fields",
+			"card_name": "Vassal Fields",
+			"set": "Children of the Empire",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "akodo_toturi_exp",
+			"card_name": "Akodo Toturi",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
+		},
+		{
+			"pool_name": "armament_artisan",
+			"card_name": "Armament Artisan",
+			"set": "Masters of the Court",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "aspiring_challenger",
+			"card_name": "Aspiring Challenger",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "awakened_tsukumogami",
+			"card_name": "Awakened Tsukumogami",
+			"set": "Elements Unbound",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "void"
+				}
+			]
+		},
+		{
+			"pool_name": "caravan_guard",
+			"card_name": "Caravan Guard",
+			"set": "The Emperor's Legion",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1,
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "goblin_sneak",
+			"card_name": "Goblin Sneak",
+			"set": "Tears of Amaterasu",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "guardian_kami",
+			"card_name": "Guardian Kami",
+			"set": "Disciples of the Void",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "hantei_daisetsu",
+			"card_name": "Hantei Daisetsu",
+			"set": "The Children of Heaven",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
+		},
+		{
+			"pool_name": "hantei_sotorii",
+			"card_name": "Hantei Sotorii",
+			"set": "For the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
+		},
+		{
+			"pool_name": "hantei_xxxviii",
+			"card_name": "Hantei XXXVIII",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 6
+		},
+		{
+			"pool_name": "humble_magistrate",
+			"card_name": "Humble Magistrate",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3,
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "ichiro",
+			"card_name": "Ichirō",
+			"set": "Seekers of Wisdom",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "imperial_librarian",
+			"card_name": "Imperial Librarian",
+			"set": "All and Nothing",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "fire"
+				}
+			]
+		},
+		{
+			"pool_name": "insolent_outcast",
+			"card_name": "Insolent Outcast",
+			"set": "The Emperor's Legion",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "ivory_kingdoms_unicorn",
+			"card_name": "Ivory Kingdoms Unicorn",
+			"set": "Warriors of the Wind",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "kami_unleashed",
+			"card_name": "Kami Unleashed",
+			"set": "Disciples of the Void",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "keeper_initiate",
+			"card_name": "Keeper Initiate",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "kudaka",
+			"card_name": "Kudaka",
+			"set": "Breath of the Kami",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
+		},
+		{
+			"pool_name": "kujira's_hireling",
+			"card_name": "Kujira's Hireling",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "mantis_seafarer",
+			"card_name": "Mantis Seafarer",
+			"set": "The Fires Within",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "air"
+				}
+			]
+		},
+		{
+			"pool_name": "mantis_tenkinja",
+			"card_name": "Mantis Tenkinja",
+			"set": "Elements Unbound",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "marauding_oni",
+			"card_name": "Marauding Oni",
+			"set": "Tainted Lands",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "miya_mystic",
+			"card_name": "Miya Mystic",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "miya_satoshi",
+			"card_name": "Miya Satoshi",
+			"set": "Meditations on the Ephemeral",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
+		},
+		{
+			"pool_name": "moto_eviscerator",
+			"card_name": "Moto Eviscerator",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "otomo_courtier",
+			"card_name": "Otomo Courtier",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
+		},
+		{
+			"pool_name": "righteous_magistrate",
+			"card_name": "Righteous Magistrate",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3,
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
+		},
+		{
+			"pool_name": "seeker_initiate",
+			"card_name": "Seeker Initiate",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "seppun_guardsman",
+			"card_name": "Seppun Guardsman",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
+		},
+		{
+			"pool_name": "seppun_hidden_guard",
+			"card_name": "Seppun Hidden Guard",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "seppun_ishikawa",
+			"card_name": "Seppun Ishikawa",
+			"set": "Fate Has No Secrets",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "seppun_truthseeker",
+			"card_name": "Seppun Truthseeker",
+			"set": "Underhand of the Emperor",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "slovenly_scavenger",
+			"card_name": "Slovenly Scavenger",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "wandering_ronin",
+			"card_name": "Wandering Ronin",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "yoritomo",
+			"card_name": "Yoritomo",
+			"set": "The Ebb and Flow",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
+		},
+		{
+			"pool_name": "favorable_ground",
+			"card_name": "Favorable Ground",
+			"set": "Core Set",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 1
+		},
+		{
+			"pool_name": "imperial_storehouse",
+			"card_name": "Imperial Storehouse",
+			"set": "Core Set",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 1
+		},
+		{
+			"pool_name": "kansen_haunt",
+			"card_name": "Kansen Haunt",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": -2
+		},
+		{
+			"pool_name": "miwaku_kabe",
+			"card_name": "Miwaku Kabe",
+			"set": "For Honor and Glory",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 3
+		},
+		{
+			"pool_name": "miya_library",
+			"card_name": "Miya Library",
+			"set": "Children of the Empire",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 1
+		},
+		{
+			"pool_name": "proving_ground",
+			"card_name": "Proving Ground",
+			"set": "Children of the Empire",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "the_imperial_palace",
+			"card_name": "The Imperial Palace",
+			"set": "The Chrysanthemum Throne",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 2
+		},
+		{
+			"pool_name": "cloud_the_mind",
+			"card_name": "Cloud the Mind",
+			"set": "Core Set",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "compass",
+			"card_name": "Compass",
+			"set": "Warriors of the Wind",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "daimyo's_gunbai",
+			"card_name": "Daimyō's Gunbai",
+			"set": "Masters of the Court",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "fine_katana",
+			"card_name": "Fine Katana",
+			"set": "Core Set",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "finger_of_jade",
+			"card_name": "Finger of Jade",
+			"set": "Tears of Amaterasu",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "ornate_fan",
+			"card_name": "Ornate Fan",
+			"set": "Core Set",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "tattered_missive",
+			"card_name": "Tattered Missive",
+			"set": "Into the Forbidden City",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "unveiled_destiny",
+			"card_name": "Unveiled Destiny",
+			"set": "Children of the Empire",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "a_perfect_cut",
+			"card_name": "A Perfect Cut",
+			"set": "For the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "a_season_of_war",
+			"card_name": "A Season of War",
+			"set": "Rokugan at War",
+			"type": "event",
+			"deck": "dynasty",
+			"cost": 1
+		},
+		{
+			"pool_name": "assassination",
+			"card_name": "Assassination",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "banzai",
+			"card_name": "Banzai!",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "breach_of_etiquette",
+			"card_name": "Breach of Etiquette",
+			"set": "The Fires Within",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "censure",
+			"card_name": "Censure",
+			"set": "Into the Forbidden City",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "charge",
+			"card_name": "Charge!",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "contingency_plan",
+			"card_name": "Contingency Plan",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "court_games",
+			"card_name": "Court Games",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "defend_your_honor",
+			"card_name": "Defend Your Honor",
+			"set": "Children of the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "enlightenment",
+			"card_name": "Enlightenment",
+			"set": "Clan Wars",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 5
+		},
+		{
+			"pool_name": "fallen_in_battle",
+			"card_name": "Fallen in Battle",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "for_shame",
+			"card_name": "For Shame!",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "good_omen",
+			"card_name": "Good Omen",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "mono_no_aware",
+			"card_name": "Mono no Aware",
+			"set": "Meditations on the Ephemeral",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 3
+		},
+		{
+			"pool_name": "offer_testimony",
+			"card_name": "Offer Testimony",
+			"set": "Underhand of the Emperor",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "outwit",
+			"card_name": "Outwit",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "overhear",
+			"card_name": "Overhear",
+			"set": "The Children of Heaven",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "peasant's_advice",
+			"card_name": "Peasant's Advice",
+			"set": "Underhand of the Emperor",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "perfect_land_ethos",
+			"card_name": "Perfect Land Ethos",
+			"set": "All and Nothing",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "policy_debate",
+			"card_name": "Policy Debate",
+			"set": "For Honor and Glory",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "prayers_to_ebisu",
+			"card_name": "Prayers to Ebisu",
+			"set": "Children of the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 3
+		},
+		{
+			"pool_name": "retreat",
+			"card_name": "Retreat",
+			"set": "Masters of the Court",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "rout",
+			"card_name": "Rout",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "sabotage",
+			"card_name": "Sabotage",
+			"set": "Tainted Lands",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0,
+			"traits": [
+				{
+					"trait": "earth"
+				}
+			]
+		},
+		{
+			"pool_name": "spies_at_court",
+			"card_name": "Spies at Court",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "stay_your_hand",
+			"card_name": "Stay Your Hand",
+			"set": "Children of the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "those_who_serve",
+			"card_name": "Those Who Serve",
+			"set": "The Emperor's Legion",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "trading_on_the_sand_road",
+			"card_name": "Trading on the Sand Road",
+			"set": "Warriors of the Wind",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "walking_the_way",
+			"card_name": "Walking the Way",
+			"set": "Disciples of the Void",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "waning_hostilities",
+			"card_name": "Waning Hostilities",
+			"set": "Fate Has No Secrets",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "warm_welcome",
+			"card_name": "Warm Welcome",
+			"set": "Children of the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "way_of_the_chrysanthemum",
+			"card_name": "Way of the Chrysanthemum",
+			"set": "The Chrysanthemum Throne",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 2
 		}
 	]
 }

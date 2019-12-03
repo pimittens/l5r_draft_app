@@ -1,180 +1,929 @@
 {
 	"cards": [
 		{
-			"name": "defend_the_wall",
-			"rarity" : "province"
+			"pool_name": "kyuden_hida",
+			"card_name": "Kyūden Hida",
+			"set": "Defenders of Rokugan",
+			"type": "stronghold"
 		},
 		{
-			"name": "flooded_waste",
-			"rarity" : "province"
+			"pool_name": "shiro_nishiyama",
+			"card_name": "Shiro Nishiyama",
+			"set": "Core Set",
+			"type": "stronghold"
+		},
+				{
+			"pool_name": "defend_the_wall",
+			"card_name": "Defend the Wall",
+			"set": "Core Set",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "earth"
+				}
+			]
+		},
+				{
+			"pool_name": "flooded_waste",
+			"card_name": "Flooded Waste",
+			"set": "The Ebb and Flow",
+			"type": "province",
+			"province_strength": 2,
+			"elements": [
+				{
+					"element": "water"
+				}
+			]
+		},
+				{
+			"pool_name": "fortified_assembly",
+			"card_name": "Fortified Assembly",
+			"set": "The Children of Heaven",
+			"type": "province",
+			"province_strength": 3,
+			"elements": [
+				{
+					"element": "air"
+				}
+			]
+		},
+				{
+			"pool_name": "kuni_wasteland",
+			"card_name": "Kuni Wasteland",
+			"set": "Defenders of Rokugan",
+			"type": "province",
+			"province_strength": 4,
+			"elements": [
+				{
+					"element": "fire"
+				}
+			]
 		},
 		{
-			"name": "kuni_wasteland",
-			"rarity" : "province"
+			"pool_name": "apprentice_earthcaller",
+			"card_name": "Apprentice Earthcaller",
+			"set": "Tainted Lands",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "kaiu_envoy",
-			"rarity" : "common"
+			"pool_name": "borderlands_defender",
+			"card_name": "Borderlands Defender",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "purifier_apprentice",
-			"rarity" : "common"
+			"pool_name": "crisis_breaker",
+			"card_name": "Crisis Breaker",
+			"set": "Fate Has No Secrets",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3,
+			"traits": [
+				{
+					"trait": "keeper"
+				}
+			]
 		},
 		{
-			"name": "hiruma_yojimbo",
-			"rarity" : "common"
+			"pool_name": "daring_challenger",
+			"card_name": "Daring Challenger",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "student_of_anatomies",
-			"rarity" : "common"
+			"pool_name": "eager_scout",
+			"card_name": "Eager Scout",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 0
 		},
 		{
-			"name": "hida_tomonatsu",
-			"rarity" : "common"
+			"pool_name": "favorable_dealbroker",
+			"card_name": "Favorable Dealbroker",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "intimidating_hida",
-			"rarity" : "common"
+			"pool_name": "fifth_tower_watch",
+			"card_name": "Fifth Tower Watch",
+			"set": "For the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
 		},
 		{
-			"name": "frontline_engineer",
-			"rarity" : "common"
+			"pool_name": "frontline_engineer",
+			"card_name": "Frontline Engineer",
+			"set": "A Champion's Foresight",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "fifth_tower_watch",
-			"rarity" : "common"
+			"pool_name": "gallant_quartermaster",
+			"card_name": "Gallant Quartermaster",
+			"set": "Shoju's Duty",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
 		},
 		{
-			"name": "funeral_pyre",
-			"rarity" : "common"
+			"pool_name": "guardian_of_virtue",
+			"card_name": "Guardian of Virtue",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2,
+			"traits": [
+				{
+					"trait": "air"
+				}
+			]
 		},
 		{
-			"name": "fruitful_respite",
-			"rarity" : "common"
+			"pool_name": "hida_amoro",
+			"card_name": "Hida Amoro",
+			"set": "Disciples of the Void",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "give_no_ground",
-			"rarity" : "common"
+			"pool_name": "hida_guardian",
+			"card_name": "Hida Guardian",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
 		},
 		{
-			"name": "smuggling_deal",
-			"rarity" : "common"
+			"pool_name": "hida_kisada",
+			"card_name": "Hida Kisada",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
 		},
 		{
-			"name": "spreading_the_darkness",
-			"rarity" : "common"
+			"pool_name": "hida_kotoe",
+			"card_name": "Hida Kotoe",
+			"set": "Seekers of Wisdom",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 3
 		},
 		{
-			"name": "in_defense_of_rokugan",
-			"rarity" : "common"
+			"pool_name": "hida_o-ushi",
+			"card_name": "Hida O-Ushi",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "reprieve",
-			"rarity" : "common"
+			"pool_name": "hida_secretkeeper",
+			"card_name": "Hida Secretkeeper",
+			"set": "Clan Wars",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
 		},
 		{
-			"name": "honed_nodachi",
-			"rarity" : "common"
+			"pool_name": "hida_sugi",
+			"card_name": "Hida Sugi",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
 		},
 		{
-			"name": "hiruma_ambusher",
-			"rarity" : "common"
+			"pool_name": "hida_sukune",
+			"card_name": "Hida Sukune",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "kyuden_hida",
-			"rarity" : "rare"
+			"pool_name": "hida_tomonatsu",
+			"card_name": "Hida Tomonatsu",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "shiro_nishiyama",
-			"rarity" : "rare"
+			"pool_name": "hida_tsuru",
+			"card_name": "Hida Tsuru",
+			"set": "Warriors of the Wind",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "shrewd_yasuki",
-			"rarity" : "rare"
+			"pool_name": "hida_yakamo",
+			"card_name": "Hida Yakamo",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "borderlands_defender",
-			"rarity" : "rare"
+			"pool_name": "hiruma_ambusher",
+			"card_name": "Hiruma Ambusher",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2
 		},
 		{
-			"name": "crisis_breaker",
-			"rarity" : "rare"
+			"pool_name": "hiruma_kogoe",
+			"card_name": "Hiruma Kogoe",
+			"set": "The Fires Within",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "hida_o-ushi",
-			"rarity" : "rare"
+			"pool_name": "hiruma_signaller",
+			"card_name": "Hiruma Signaller",
+			"set": "For the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "hida_yakamo",
-			"rarity" : "rare"
+			"pool_name": "hiruma_skirmisher",
+			"card_name": "Hiruma Skirmisher",
+			"set": "Into the Forbidden City",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 1
 		},
 		{
-			"name": "steadfast_witch_hunter",
-			"rarity" : "rare"
+			"pool_name": "hiruma_yojimbo",
+			"card_name": "Hiruma Yōjimbō",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "hida_kisada",
-			"rarity" : "rare"
+			"pool_name": "hiruma_yoshino",
+			"card_name": "Hiruma Yoshino",
+			"set": "Bonds of Blood",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "kuni_yori",
-			"rarity" : "rare"
+			"pool_name": "intimidating_hida",
+			"card_name": "Intimidating Hida",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "iron_mine",
-			"rarity" : "rare"
+			"pool_name": "kaiu_envoy",
+			"card_name": "Kaiu Envoy",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
 		},
 		{
-			"name": "karada_district",
-			"rarity" : "rare"
+			"pool_name": "kaiu_inventor",
+			"card_name": "Kaiu Inventor",
+			"set": "The Chrysanthemum Throne",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "seventh_tower",
-			"rarity" : "rare"
+			"pool_name": "kaiu_shihobu",
+			"card_name": "Kaiu Shihobu",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
 		},
 		{
-			"name": "pathfinder's_blade",
-			"rarity" : "rare"
+			"pool_name": "kaiu_shuichi",
+			"card_name": "Kaiu Shuichi",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "fight_on",
-			"rarity" : "rare"
+			"pool_name": "kaiu_siege_force",
+			"card_name": "Kaiu Siege Force",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 6
 		},
 		{
-			"name": "hiruma_skirmisher",
-			"rarity" : "rare"
+			"pool_name": "kuni_ritsuko",
+			"card_name": "Kuni Ritsuko",
+			"set": "Meditations on the Ephemeral",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
 		},
 		{
-			"name": "reinforced_plate",
-			"rarity" : "rare"
+			"pool_name": "kuni_yori",
+			"card_name": "Kuni Yori",
+			"set": "Tainted Lands",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
 		},
 		{
-			"name": "the_mountain_does_not_fall",
-			"rarity" : "rare"
+			"pool_name": "nezumi_infiltrator",
+			"card_name": "Nezumi Infiltrator",
+			"set": "The Ebb and Flow",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 1
 		},
 		{
-			"name": "watch_commander",
-			"rarity" : "rare"
+			"pool_name": "purifier_apprentice",
+			"card_name": "Purifier Apprentice",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
 		},
 		{
-			"name": "way_of_the_crab",
-			"rarity" : "rare"
+			"pool_name": "shadowlands_hunter",
+			"card_name": "Shadowlands Hunter",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "desolation",
-			"rarity" : "rare"
+			"pool_name": "shrewd_yasuki",
+			"card_name": "Shrewd Yasuki",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "fury_of_the_damned",
-			"rarity" : "rare"
+			"pool_name": "siege_captain",
+			"card_name": "Siege Captain",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
 		},
 		{
-			"name": "jade_tetsubo",
-			"rarity" : "rare"
+			"pool_name": "staunch_hida",
+			"card_name": "Staunch Hida",
+			"set": "Tears of Amaterasu",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
 		},
 		{
-			"name": "the_strength_of_the_mountain",
-			"rarity" : "rare"
+			"pool_name": "steadfast_witch_hunter",
+			"card_name": "Steadfast Witch Hunter",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
+		},
+		{
+			"pool_name": "stoic_gunso",
+			"card_name": "Stoic Gunsō",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "stoic_magistrate",
+			"card_name": "Stoic Magistrate",
+			"set": "For Honor and Glory",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "student_of_anatomies",
+			"card_name": "Student of Anatomies",
+			"set": "The Children of Heaven",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "tainted_hero",
+			"card_name": "Tainted Hero",
+			"set": "All and Nothing",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "third_tower_guard",
+			"card_name": "Third Tower Guard",
+			"set": "Breath of the Kami",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 1
+		},
+		{
+			"pool_name": "unyielding_sensei",
+			"card_name": "Unyielding Sensei",
+			"set": "Defenders of Rokugan",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "vanguard_warrior",
+			"card_name": "Vanguard Warrior",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "vengeful_berserker",
+			"card_name": "Vengeful Berserker",
+			"set": "Core Set",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "warden_of_the_damned",
+			"card_name": "Warden of the Damned",
+			"set": "Justice for Satsume",
+			"type": "character",
+			"deck": "conflict",
+			"cost": 3
+		},
+		{
+			"pool_name": "yasuki_broker",
+			"card_name": "Yasuki Broker",
+			"set": "Elements Unbound",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 4
+		},
+		{
+			"pool_name": "yasuki_fuzake",
+			"card_name": "Yasuki Fuzake",
+			"set": "Masters of the Court",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "yasuki_hatsu",
+			"card_name": "Yasuki Hatsu",
+			"set": "Shoju's Duty",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "yasuki_hikaru",
+			"card_name": "Yasuki Hikaru",
+			"set": "The Emperor's Legion",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 3
+		},
+		{
+			"pool_name": "yasuki_oguri",
+			"card_name": "Yasuki Oguri",
+			"set": "Underhand of the Emperor",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "yasuki_procurer",
+			"card_name": "Yasuki Procurer",
+			"set": "Children of the Empire",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 2
+		},
+		{
+			"pool_name": "yasuki_taka",
+			"card_name": "Yasuki Taka",
+			"set": "Fate Has No Secrets",
+			"type": "character",
+			"deck": "dynasty",
+			"cost": 5
+		},
+		{
+			"pool_name": "borderlands_fortifications",
+			"card_name": "Borderlands Fortifications",
+			"set": "Core Set",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 2
+		},
+		{
+			"pool_name": "funeral_pyre",
+			"card_name": "Funeral Pyre",
+			"set": "Core Set",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "heavy_ballista",
+			"card_name": "Heavy Ballista",
+			"set": "Children of the Empire",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "hiruma_outpost",
+			"card_name": "Hiruma Outpost",
+			"set": "Breath of the Kami",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 2
+		},
+		{
+			"pool_name": "iron_mine",
+			"card_name": "Iron Mine",
+			"set": "Meditations on the Ephemeral",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "kaiu_forges",
+			"card_name": "Kaiu Forges",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 3
+		},
+		{
+			"pool_name": "karada_district",
+			"card_name": "Karada District",
+			"set": "Tears of Amaterasu",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 1
+		},
+		{
+			"pool_name": "kuni_laboratory",
+			"card_name": "Kuni Laboratory",
+			"set": "All and Nothing",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "northern_curtain_wall",
+			"card_name": "Northern Curtain Wall",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 4
+		},
+		{
+			"pool_name": "river_of_the_last_stand",
+			"card_name": "River of the Last Stand",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "seventh_tower",
+			"card_name": "Seventh Tower",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 2
+		},
+		{
+			"pool_name": "strategic_weakpoint",
+			"card_name": "Strategic Weakpoint",
+			"set": "A Champion's Foresight",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 0
+		},
+		{
+			"pool_name": "third_whisker_warrens",
+			"card_name": "Third Whisker Warrens",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 1
+		},
+		{
+			"pool_name": "watchtower_of_valor",
+			"card_name": "Watchtower of Valor",
+			"set": "Defenders of Rokugan",
+			"type": "holding",
+			"deck": "dynasty",
+			"province_strength": 1
+		},
+		{
+			"pool_name": "callous_ashigaru",
+			"card_name": "Callous Ashigaru",
+			"set": "Justice for Satsume",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "honed_nodachi",
+			"card_name": "Honed Nodachi",
+			"set": "Children of the Empire",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "jade_tetsubo",
+			"card_name": "Jade Tetsubō",
+			"set": "Core Set",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "pathfinder's_blade",
+			"card_name": "Pathfinder's Blade",
+			"set": "For Honor and Glory",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0,
+			"traits": [
+				{
+					"trait": "seeker"
+				}
+			]
+		},
+		{
+			"pool_name": "pit_trap",
+			"card_name": "Pit Trap",
+			"set": "The Chrysanthemum Throne",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 3
+		},
+		{
+			"pool_name": "pragmatism",
+			"card_name": "Pragmatism",
+			"set": "Elements Unbound",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "reinforced_plate",
+			"card_name": "Reinforced Plate",
+			"set": "Defenders of Rokugan",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "reprieve",
+			"card_name": "Reprieve",
+			"set": "Core Set",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "seal_of_the_crab",
+			"card_name": "Seal of the Crab",
+			"set": "Into the Forbidden City",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "sharpened_tsuruhashi",
+			"card_name": "Sharpened Tsuruhashi",
+			"set": "The Children of Heaven",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "subterranean_guile",
+			"card_name": "Subterranean Guile",
+			"set": "Defenders of Rokugan",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "watch_commander",
+			"card_name": "Watch Commander",
+			"set": "Core Set",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "wicked_tetsubo",
+			"card_name": "Wicked Tetsubō",
+			"set": "The Fires Within",
+			"type": "attachment",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "desolation",
+			"card_name": "Desolation",
+			"set": "Defenders of Rokugan",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "fair_accord",
+			"card_name": "Fair Accord",
+			"set": "Fate Has No Secrets",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "banfight_onzai",
+			"card_name": "Fight On",
+			"set": "The Ebb and Flow",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1,
+			"traits": [
+				{
+					"trait": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "fruitful_respite",
+			"card_name": "Fruitful Respite",
+			"set": "Defenders of Rokugan",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "fury_of_the_damned",
+			"card_name": "Fury of the Damned",
+			"set": "Bonds of Blood",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "give_no_ground",
+			"card_name": "Give No Ground",
+			"set": "For the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "in_defense_of_rokugan",
+			"card_name": "In Defense of Rokugan",
+			"set": "Children of the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "levy",
+			"card_name": "Levy",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "raise_the_alarm",
+			"card_name": "Raise the Alarm",
+			"set": "For Honor and Glory",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "rebuild",
+			"card_name": "Rebuild",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "root_out_heresy",
+			"card_name": "Root Out Heresy",
+			"set": "Shoju's Duty",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "siege_warfare",
+			"card_name": "Siege Warfare",
+			"set": "Defenders of Rokugan",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "smuggling_deal",
+			"card_name": "Smuggling Deal",
+			"set": "Children of the Empire",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "specialized_defenses",
+			"card_name": "Specialized Defenses",
+			"set": "Elements Unbound",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0,
+			"traits": [
+				{
+					"trait": "water"
+				}
+			]
+		},
+		{
+			"pool_name": "spreading_the_darkness",
+			"card_name": "Spreading the Darkness",
+			"set": "Tainted Lands",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
+		},
+		{
+			"pool_name": "the_crashing_wave",
+			"card_name": "The Crashing Wave",
+			"set": "Clan Wars",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 2
+		},
+		{
+			"pool_name": "the_mountain_does_not_fall",
+			"card_name": "The Mountain Does Not Fall",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "the_strength_of_the_mountain",
+			"card_name": "The Strength of the Mountain",
+			"set": "Defenders of Rokugan",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 3
+		},
+		{
+			"pool_name": "way_of_the_crab",
+			"card_name": "Way of the Crab",
+			"set": "Core Set",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 1
+		},
+		{
+			"pool_name": "withstand_the_darkness",
+			"card_name": "Withstand the Darkness",
+			"set": "A Champion's Foresight",
+			"type": "event",
+			"deck": "conflict",
+			"cost": 0
 		}
 	]
 }
