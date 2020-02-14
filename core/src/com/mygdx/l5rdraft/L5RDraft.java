@@ -11,6 +11,7 @@ import com.mygdx.l5rdraft.cards.Card;
 import com.mygdx.l5rdraft.cards.PackFactory;
 import com.mygdx.l5rdraft.screen.AbstractScreen;
 import com.mygdx.l5rdraft.screen.DraftScreen;
+import com.mygdx.l5rdraft.screen.PackScreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +22,7 @@ public class L5RDraft extends Game {
     //private TestScreen testScreen;
     //private LoadingScreen loadingScreen;
 
-    private Draft draft;
+    //private Draft draft;
 
     // list of all cards used
     private List<Card> cardList;
@@ -35,7 +36,7 @@ public class L5RDraft extends Game {
         assets.finishLoading();
         //loadingScreen = new LoadingScreen(this);
         // hard coded drafters
-        List<Drafter> drafters = new ArrayList<>();
+        /*List<Drafter> drafters = new ArrayList<>();
         drafters.add(new Drafter("user"));
         drafters.add(new Drafter("_ai0"));
         drafters.add(new Drafter("_ai1"));
@@ -45,18 +46,19 @@ public class L5RDraft extends Game {
         drafters.add(new Drafter("_ai5"));
         drafters.add(new Drafter("_ai6"));
         draft = new Draft(PackFactory.createPacks(cardList), drafters);
-        draft.startDraft();
+        draft.startDraft();*/
         //testScreen = new TestScreen(this);
-        this.setScreen(new DraftScreen(this));
+        //this.setScreen(new DraftScreen(this));
+        this.setScreen(new PackScreen(this));
     }
 
     public Assets getAssets() {
         return assets;
     }
 
-    public Draft getDraft() {
+    /*public Draft getDraft() {
         return draft;
-    }
+    }*/
 
     public List<Card> getCardList() {
         return cardList;
