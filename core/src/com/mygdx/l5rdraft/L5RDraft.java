@@ -11,6 +11,7 @@ import com.mygdx.l5rdraft.cards.Card;
 import com.mygdx.l5rdraft.cards.PackFactory;
 import com.mygdx.l5rdraft.screen.AbstractScreen;
 import com.mygdx.l5rdraft.screen.DraftScreen;
+import com.mygdx.l5rdraft.screen.PackViewerScreen;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +48,8 @@ public class L5RDraft extends Game {
         draft = new Draft(PackFactory.createPacks(cardList), drafters);
         draft.startDraft();
         //testScreen = new TestScreen(this);
-        this.setScreen(new DraftScreen(this));
+        //this.setScreen(new DraftScreen(this));
+        this.setScreen(new PackViewerScreen(this));
     }
 
     public Assets getAssets() {
@@ -109,7 +111,7 @@ public class L5RDraft extends Game {
 
     private void loadCards(String fileName) {
         JsonReader reader = new JsonReader();
-        JsonValue base = reader.parse(Gdx.files.internal("json/" + fileName + ".json"));
+        JsonValue base = reader.parse(Gdx.files.internal("pool_1/" + fileName + ".json"));
         Card.RARITY rarity;
         for (JsonValue card : base.get("cards")) {
             switch (card.getString("rarity")) {
