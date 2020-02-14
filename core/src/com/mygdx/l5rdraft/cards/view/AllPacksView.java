@@ -27,8 +27,7 @@ public class AllPacksView {
 
     private int page;
 
-    public AllPacksView(Pool pool, Rectangle dimen, Assets assets) {
-        setPool(pool, assets);
+    public AllPacksView(Rectangle dimen, Assets assets) {
         star = assets.getStar();
         arrowOne = assets.getArrowOne();
         arrowTwo = assets.getArrowTwo();
